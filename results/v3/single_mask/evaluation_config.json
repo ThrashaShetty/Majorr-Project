@@ -1,0 +1,23 @@
+{
+  "test_set": "33 support patients / 156 slices (never scored before)",
+  "dev_set_excluded": [
+    "case_003",
+    "case_006",
+    "case_014",
+    "case_020",
+    "case_021",
+    "case_052",
+    "case_059",
+    "case_062"
+  ],
+  "support_pairing": "leave-one-patient-out nearest (64x64 thumbnail cosine, run_evaluation._thumb) among the other 32 held-out patients",
+  "checkpoint": "checkpoints/sam_vit_b_01ec64.pth",
+  "device": "cpu",
+  "seed": 42,
+  "adaptive_points": true,
+  "enhanced": "production src/fob/fob_pipeline.py (v2, multimask_output=True)",
+  "a5_rule": "keep box-only if 0.5 <= box_mask_area / support_mask_area <= 2.0, else Enhanced v2 (fixed, not tuned)",
+  "single_mask": "identical Enhanced v2 prompts, SamPredictor.predict(multimask_output=False)",
+  "statistics": "primary A5 vs Baseline; patient-level Wilcoxon signed-rank on per-patient mean Dice; Holm over 4 tests; patient cluster bootstrap 10k (seed 42)",
+  "main_source_modified": false
+}

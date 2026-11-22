@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Large / private research assets (never commit medical data or weights)
+data/raw/*
+!data/raw/.gitkeep
+data/images/*
+!data/images/.gitkeep
+data/masks/*
+!data/masks/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+*.pth
+*.nii
+*.nii.gz
+
+# Generated outputs
+results/overlays/*
+!results/overlays/.gitkeep
+experiments.db
+experiments.db-journal
+tmp_uploads/
+
+# SQLite sidecar files (any database)
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Versioned overlay images (regenerable; reports, CSV/JSON and scripts stay tracked)
+results/v*/**/overlays/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,53 @@
+== top-level ==
+__pycache__/                20K       1 files
+backend/                    46K       4 files
+checkpoints/               358M       2 files
+data/                      1.1G     507 files
+frontend/                   28K       1 files
+results/                   256M     658 files
+src/                       296K      22 files
+tests/                     341K      19 files
+tmp_uploads/                  0       0 files
+.git/                       61K      18 files
+.pytest_cache/             7.0K       4 files
+.ruff_cache/                88K       6 files
+.venv/                     215M   28661 files
+total 80
+-rw-r--r-- 1 Anvith Shetty 197121   695 2026-11-22_05:00:22 .gitignore
+-rw-r--r-- 1 Anvith Shetty 197121 12288 2026-11-22_05:42:11 experiments.db
+-rw-r--r-- 1 Anvith Shetty 197121 23061 2026-11-22_11:07:49 README.md
+-rw-r--r-- 1 Anvith Shetty 197121  1336 2026-11-22_05:29:50 requirements.txt
+-rw-r--r-- 1 Anvith Shetty 197121 10175 2026-11-22_10:45:36 run_evaluation.py
+== data ==
+data/images                                 18M   209 files
+data/masks                                 916K   209 files
+data/raw/Task09_Spleen/imagesTr            1.1G    41 files
+data/raw/Task09_Spleen/labelsTr            1.3M    41 files
+Task09_Spleen
+imagesTr
+labelsTr
+== checkpoints ==
+total 366260
+drwxr-xr-x 1 Anvith Shetty 197121         0 Nov 22 05:57 .
+drwxr-xr-x 1 Anvith Shetty 197121         0 Nov 22 10:45 ..
+-rw-r--r-- 1 Anvith Shetty 197121         0 Nov 22 05:46 .gitkeep
+-rw-r--r-- 1 Anvith Shetty 197121 375042383 Nov 22 05:57 sam_vit_b_01ec64.pth
+== results ==
+results                        256M   658 files (recursive)
+results/charts                 104K     3 files (recursive)
+results/overlays                36M   160 files (recursive)
+results/v2                      35M   164 files (recursive)
+results/v2/overlays             35M   158 files (recursive)
+results/v2/charts              104K     2 files (recursive)
+results/v3                     186M   327 files (recursive)
+results/v3/adaptive            111M   160 files (recursive)
+results/v3/single_mask          75M   161 files (recursive)
+results/v3/scripts              36K     4 files (recursive)
+== secrets-like files (names only) ==
+== tmp_uploads ==
+tmp_uploads
+== docs ==
+./README.md
+./results/v3/REPORT.md
+
+[exited with code 0]

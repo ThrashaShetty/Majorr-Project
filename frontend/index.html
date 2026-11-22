@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedSAM Segmentation Dashboard</title>
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --card: #12182b;
+    --card-2: #182039;
+    --accent: #00d4aa;
+    --accent-dim: rgba(0, 212, 170, 0.15);
+    --text: #ffffff;
+    --muted: #8c96a8;
+    --border: #232c47;
+    --danger: #ff5c7a;
+    --warn: #ffb347;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; font-size: 15px; }
+  header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    padding: 16px 24px; border-bottom: 1px solid var(--border); background: #0d1222; }
+  header h1 { margin: 0; font-size: 1.35rem; font-weight: 600; letter-spacing: .2px; }
+  header .sub { color: var(--muted); font-size: .82rem; margin-top: 2px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--muted);
+    background: var(--card); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border); }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); }
+  .dot.ok { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+  .dot.bad { background: var(--danger); }
+  .dot.warn { background: var(--warn); }
+  main { display: grid; gap: 18px; padding: 18px 24px;
+    grid-template-columns: minmax(260px, 300px) minmax(0, 1fr) minmax(240px, 290px);
+    grid-template-areas: "left center right" "history history history"; }
+  @media (max-width: 1100px) {
+    main { grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+      grid-template-areas: "left center" "right right" "history history"; }
+  }
+  @media (max-width: 720px) {
+    main { grid-template-columns: minmax(0, 1fr); padding: 12px 16px;
+      grid-template-areas: "left" "center" "right" "history"; }
+  }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; min-width: 0; }
+  .card h2 { margin: 0 0 12px; font-size: .95rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 600; }
+  #left { grid-area: left; } #center { grid-area: center; } #right { grid-area: right; } #history { grid-area: history; }
+
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-size: .85rem; margin-bottom: 6px; }
+  .field label .opt { color: var(--muted); font-weight: normal; }
+  .drop { position: relative; display: flex; align-items: center; gap: 10px; padding: 8px; border: 1px dashed var(--border);
+    border-radius: 10px; background: var(--card-2); cursor: pointer; transition: border-color .15s; }
+  .drop:hover, .drop:focus-within { border-color: var(--accent); }
+  .drop input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+  .thumb { width: 44px; height: 44px; border-radius: 6px; background: #0a0e1a center/cover no-repeat; flex: none;
+    border: 1px solid var(--border); }
+  .fname { font-size: .8rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  select { width: 100%; padding: 9px 10px; border-radius: 8px; background: var(--card-2); color: var(--text);
+    border: 1px solid var(--border); font-size: .9rem; }
+  select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .method-help { font-size: .76rem; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+  .btn { width: 100%; padding: 11px; border-radius: 8px; border: none; font-weight: 600; font-size: .92rem;
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: filter .15s, opacity .15s; }
+  .btn + .btn { margin-top: 10px; }
+  .btn-primary { background: var(--accent); color: #04211b; }
+  .btn-secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .btn:hover:not(:disabled) { filter: brightness(1.1); }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .spinner { width: 16px; height: 16px; border: 2px solid rgba(0,0,0,.25); border-top-color: #04211b;
+    border-radius: 50%; animation: spin .8s linear infinite; display: none; }
+  .loading .spinner { display: inline-block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .panel { background: var(--card-2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .panel .ph { font-size: .78rem; color: var(--muted); padding: 7px 10px; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; gap: 6px; }
+  .panel .pb { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; background: #070a13; position: relative; }
+  .panel img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .empty { color: #4f5a75; font-size: .8rem; text-align: center; padding: 10px; }
+  .overlay-loader { position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+    background: rgba(10,14,26,.75); }
+  .busy .overlay-loader { display: flex; }
+  .overlay-loader .spinner { display: inline-block; width: 30px; height: 30px; border-color: rgba(0,212,170,.2); border-top-color: var(--accent); }
+  .note { font-size: .78rem; color: var(--muted); margin-top: 10px; line-height: 1.45; }
+
+  .metric { margin-bottom: 14px; }
+  .metric .row { display: flex; justify-content: space-between; font-size: .88rem; margin-bottom: 5px; }
+  .metric .val { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .metric .val.na { color: var(--muted); font-weight: normal; font-style: italic; }
+  .bar { height: 8px; border-radius: 99px; background: #0a0e1a; overflow: hidden; border: 1px solid var(--border); }
+  .bar > span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #00a986, var(--accent));
+    transition: width .9s cubic-bezier(.2,.8,.2,1); }
+  .timing { display: flex; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--border); font-size: .88rem; }
+  .exp-id { margin-top: 12px; font-size: .82rem; color: var(--muted); }
+  .exp-id b { color: var(--accent); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: .72rem; background: var(--accent-dim); color: var(--accent); }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 760px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: .76rem; text-transform: uppercase; letter-spacing: .6px; }
+  td.num { font-variant-numeric: tabular-nums; }
+  td.na { color: var(--muted); font-style: italic; }
+  tr:hover td { background: rgba(255,255,255,.02); }
+  .hist-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .link-btn { background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 12px; border-radius: 8px; cursor: pointer; font-size: .8rem; }
+  .link-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  #toasts { position: fixed; right: 16px; bottom: 16px; display: flex; flex-direction: column; gap: 8px; z-index: 100; max-width: min(420px, calc(100vw - 32px)); }
+  .toast { padding: 12px 14px; border-radius: 10px; background: var(--card-2); border-left: 4px solid var(--accent);
+    box-shadow: 0 8px 24px rgba(0,0,0,.4); font-size: .86rem; animation: slidein .25s ease; }
+  .toast.error { border-left-color: var(--danger); }
+  .toast.warn { border-left-color: var(--warn); }
+  @keyframes slidein { from { transform: translateY(10px); opacity: 0; } }
+
+  .modal-bg { position: fixed; inset: 0; background: rgba(3,5,12,.75); display: none; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+  .modal-bg.open { display: flex; }
+  .modal { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); width: min(860px, 100%); max-height: 90vh; overflow: auto; padding: 20px; }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .modal-head h3 { margin: 0; font-size: 1.05rem; }
+  .close { background: none; border: none; color: var(--muted); font-size: 1.5rem; cursor: pointer; line-height: 1; }
+  .cmp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .cmp-card { background: var(--card-2); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+  .cmp-card h4 { margin: 0 0 10px; color: var(--accent); font-size: .9rem; }
+  .cmp-card.missing h4 { color: var(--muted); }
+  .cmp-card dl { display: grid; grid-template-columns: 1fr auto; gap: 5px 10px; margin: 0; font-size: .84rem; }
+  .cmp-card dt { color: var(--muted); }
+  .cmp-card dd { margin: 0; font-variant-numeric: tabular-nums; text-align: right; }
+  footer { color: var(--muted); font-size: .76rem; text-align: center; padding: 6px 16px 22px; line-height: 1.5; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>🔬 MedSAM Segmentation Dashboard</h1>
+    <div class="sub">Background-Aware Prompting for SAM · Srinivas University · Research prototype</div>
+  </div>
+  <div class="status" role="status" aria-live="polite"><span class="dot" id="apiDot"></span><span id="apiStatus">Checking backend…</span></div>
+</header>
+
+<main>
+  <!-- LEFT: inputs -->
+  <section class="card" id="left" aria-labelledby="inputsTitle">
+    <h2 id="inputsTitle">Inputs</h2>
+    <div class="field">
+      <label for="supportImage">Support image</label>
+      <div class="drop"><div class="thumb" id="thumb-supportImage"></div><span class="fname" id="name-supportImage">Choose PNG / JPG…</span>
+        <input type="file" id="supportImage" accept=".png,.jpg,.jpeg,.bmp,.tif,.tiff" aria-describedby="name-supportImage"></div>
+    </div>
+    <div class="field">
+      <label for="supportMask">Support mask</label>
+      <div class="drop"><div class="thumb" id="thumb-supportMask"></div><span class="fname" id="name-supportMask">Choose binary mask…</span>
+        <input type="file" id="supportMask" accept=".png,.jpg,.jpeg,.bmp,.tif,.tiff" aria-describedby="name-supportMask"></div>
+    </div>
+    <div class="field">
+      <label for="queryImage">Query image</label>
+      <div class="drop"><div class="thumb" id="thumb-queryImage"></div><span class="fname" id="name-queryImage">Choose image to segment…</span>
+        <input type="file" id="queryImage" accept=".png,.jpg,.jpeg,.bmp,.tif,.tiff" aria-describedby="name-queryImage"></div>
+    </div>
+    <div class="field">
+      <label for="queryMask">Query ground-truth mask <span class="opt">(optional — enables metrics)</span></label>
+      <div class="drop"><div class="thumb" id="thumb-queryMask"></div><span class="fname" id="name-queryMask">None selected</span>
+        <input type="file" id="queryMask" accept=".png,.jpg,.jpeg,.bmp,.tif,.tiff" aria-describedby="name-queryMask"></div>
+    </div>
+    <div class="field">
+      <label for="method">Method</label>
+      <select id="method">
+        <option value="baseline">Baseline SAM (support box prompt)</option>
+        <option value="fob">FoB SAM (background points only)</option>
+        <option value="enhanced" selected>Enhanced FoB SAM (box + background + 1 positive)</option>
+      </select>
+      <div class="method-help" id="methodHelp"></div>
+    </div>
+    <button class="btn btn-primary" id="segmentBtn" type="button"><span class="spinner"></span><span>Segment</span></button>
+    <button class="btn btn-secondary" id="compareBtn" type="button">Compare methods</button>
+  </section>
+
+  <!-- CENTER: images -->
+  <section class="card" id="center" aria-labelledby="vizTitle">
+    <h2 id="vizTitle">Visualisation</h2>
+    <div class="panels" id="panels">
+      <div class="panel"><div class="ph">Input image</div><div class="pb" id="p-input"><div class="empty">Upload a query image</div></div></div>
+      <div class="panel"><div class="ph">Ground truth</div><div class="pb" id="p-gt"><div class="empty">No ground-truth mask provided</div></div></div>
+      <div class="panel"><div class="ph">Predicted mask</div><div class="pb" id="p-pred"><div class="empty">No prediction yet</div><div class="overlay-loader"><span class="spinner"></span></div></div></div>
+      <div class="panel"><div class="ph">Overlay</div><div class="pb" id="p-overlay"><div class="empty">No prediction yet</div><div class="overlay-loader"><span class="spinner"></span></div></div></div>
+      <div class="panel"><div class="ph"><span>Uncertainty</span><span id="uncMethod"></span></div><div class="pb" id="p-unc"><div class="empty">No uncertainty map</div><div class="overlay-loader"><span class="spinner"></span></div></div></div>
+    </div>
+    <div class="note" id="uncNote"></div>
+  </section>
+
+  <!-- RIGHT: metrics -->
+  <section class="card" id="right" aria-labelledby="metricsTitle">
+    <h2 id="metricsTitle">Metrics</h2>
+    <div id="metrics"></div>
+    <div class="timing"><span>Inference time</span><span class="val" id="m-time">—</span></div>
+    <div class="exp-id" id="expId">No experiment run in this session.</div>
+  </section>
+
+  <!-- BOTTOM: history -->
+  <section class="card" id="history" aria-labelledby="histTitle">
+    <div class="hist-head"><h2 id="histTitle">Experiment history</h2><button class="link-btn" id="refreshBtn" type="button">Refresh</button></div>
+    <div class="table-wrap">
+      <table aria-describedby="histTitle">
+        <thead><tr><th>ID</th><th>Timestamp (UTC)</th><th>Query</th><th>Support</th><th>Method</th>
+          <th>Dice</th><th>IoU</th><th>Precision</th><th>Recall</th><th>Boundary IoU</th><th>Time (ms)</th></tr></thead>
+        <tbody id="historyBody"><tr><td colspan="11" class="na">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>Academic research prototype. Not clinically validated and not intended for medical diagnosis or treatment decisions.<br>
+  “N/A” means a metric could not be computed (e.g. no ground truth); it is different from a score of 0.</footer>
+
+<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head"><h3 id="modalTitle">Method comparison</h3><button class="close" id="modalClose" aria-label="Close comparison">×</button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<div id="toasts" aria-live="assertive"></div>
+
+<script>
+/* ---- Configuration: change the backend URL here only ---- */
+const API_BASE = "http://localhost:8000";
+
+const METRICS = [
+  ["dice", "Dice"], ["iou", "IoU"], ["precision", "Precision"], ["recall", "Recall"], ["boundary_iou", "Boundary IoU"]
+];
+const METHOD_LABELS = { baseline: "Baseline SAM", fob: "FoB SAM", enhanced: "Enhanced FoB SAM" };
+const METHOD_HELP = {
+  baseline: "Transfers the support-mask bounding box to the query as a SAM box prompt.",
+  fob: "Experimental: only background (label 0) points from BPPC → BCM → SPR. Does not define the foreground boundary.",
+  enhanced: "Support box + SPR background points outside the box + one positive point at the least background-like location inside the box."
+};
+const $ = (id) => document.getElementById(id);
+const files = { supportImage: null, supportMask: null, queryImage: null, queryMask: null };
+let busy = false;
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function fmt(v, digits = 4) { return (v === null || v === undefined || Number.isNaN(Number(v))) ? null : Number(v).toFixed(digits); }
+
+function toast(msg, kind = "info", ms = 5000) {
+  const el = document.createElement("div");
+  el.className = "toast " + (kind === "error" ? "error" : kind === "warn" ? "warn" : "");
+  el.textContent = msg;
+  $("toasts").appendChild(el);
+  setTimeout(() => el.remove(), ms);
+}
+
+function setImage(panelId, src, alt) {
+  const pb = $(panelId);
+  const loader = pb.querySelector(".overlay-loader");
+  pb.innerHTML = "";
+  if (src) { const img = new Image(); img.src = src; img.alt = alt; pb.appendChild(img); }
+  else { const d = document.createElement("div"); d.className = "empty"; d.textContent = alt; pb.appendChild(d); }
+  if (loader) pb.appendChild(loader);
+}
+
+function renderMetrics(metrics) {
+  const box = $("metrics");
+  box.innerHTML = "";
+  for (const [key, label] of METRICS) {
+    const v = metrics ? metrics[key] : undefined;
+    const has = v !== null && v !== undefined;
+    const wrap = document.createElement("div");
+    wrap.className = "metric";
+    wrap.innerHTML = `<div class="row"><span>${label}</span><span class="val ${has ? "" : "na"}">${
+      metrics === null ? "—" : has ? fmt(v) : "N/A"}</span></div><div class="bar" role="progressbar" aria-label="${label}"
+      aria-valuemin="0" aria-valuemax="1" ${has ? `aria-valuenow="${fmt(v)}"` : ""}><span></span></div>`;
+    box.appendChild(wrap);
+    if (has) requestAnimationFrame(() => requestAnimationFrame(() => {
+      wrap.querySelector(".bar > span").style.width = (Math.max(0, Math.min(1, v)) * 100).toFixed(1) + "%";
+    }));
+  }
+  const t = metrics ? metrics.inference_ms : null;
+  $("m-time").textContent = t === null || t === undefined ? "—" : `${Number(t).toFixed(1)} ms`;
+}
+
+function bindFile(id) {
+  $(id).addEventListener("change", (e) => {
+    const f = e.target.files[0] || null;
+    files[id] = f;
+    $("name-" + id).textContent = f ? f.name : (id === "queryMask" ? "None selected" : "Choose file…");
+    const thumb = $("thumb-" + id);
+    if (thumb.dataset.url) URL.revokeObjectURL(thumb.dataset.url);
+    if (f) { const url = URL.createObjectURL(f); thumb.dataset.url = url; thumb.style.backgroundImage = `url("${url}")`; }
+    else { thumb.style.backgroundImage = ""; delete thumb.dataset.url; }
+    if (id === "queryImage") setImage("p-input", f ? URL.createObjectURL(f) : null, f ? "Query image" : "Upload a query image");
+    if (id === "queryMask") setImage("p-gt", f ? URL.createObjectURL(f) : null, f ? "Ground-truth mask" : "No ground-truth mask provided");
+    updateButtons();
+  });
+}
+
+function updateButtons() {
+  $("segmentBtn").disabled = busy;
+  $("compareBtn").disabled = busy || !files.queryImage;
+}
+
+function setBusy(on) {
+  busy = on;
+  $("segmentBtn").classList.toggle("loading", on);
+  $("segmentBtn").querySelector("span:last-child").textContent = on ? "Segmenting…" : "Segment";
+  for (const id of ["p-pred", "p-overlay", "p-unc"]) $(id).classList.toggle("busy", on);
+  updateButtons();
+}
+
+async function apiErrorMessage(res) {
+  try {
+    const body = await res.json();
+    if (typeof body.detail === "string") return body.detail;
+    if (Array.isArray(body.detail)) return body.detail.map((d) => `${(d.loc || []).slice(-1)[0]}: ${d.msg}`).join("; ");
+  } catch (_) { /* not JSON */ }
+  return `HTTP ${res.status}`;
+}
+
+async function segment() {
+  const missing = [["supportImage", "support image"], ["supportMask", "support mask"], ["queryImage", "query image"]]
+    .filter(([k]) => !files[k]).map(([, n]) => n);
+  if (missing.length) { toast("Please select: " + missing.join(", "), "error"); return; }
+  const method = $("method").value;
+  const fd = new FormData();
+  fd.append("support_image", files.supportImage);
+  fd.append("support_mask", files.supportMask);
+  fd.append("query_image", files.queryImage);
+  if (files.queryMask) fd.append("query_mask", files.queryMask);
+  fd.append("method", method);
+  setBusy(true);
+  try {
+    const res = await fetch(`${API_BASE}/segment`, { method: "POST", body: fd });
+    if (!res.ok) throw new Error(await apiErrorMessage(res));
+    const data = await res.json();
+    if (!data.success) throw new Error("Segmentation did not succeed");
+    setImage("p-pred", "data:image/png;base64," + data.mask_base64, "Predicted mask");
+    setImage("p-overlay", "data:image/png;base64," + data.overlay_base64, "Segmentation overlay");
+    const ui = data.uncertainty_info || {};
+    if (data.uncertainty_base64) {
+      setImage("p-unc", "data:image/png;base64," + data.uncertainty_base64, "Uncertainty heatmap");
+      $("uncMethod").innerHTML = `<span class="badge">${escapeHtml(ui.method || "")}</span>`;
+    } else {
+      setImage("p-unc", null, "Uncertainty unavailable");
+      $("uncMethod").textContent = "";
+    }
+    $("uncNote").textContent = [ui.reason, ui.mc_dropout_unavailable_reason ? `MC Dropout: ${ui.mc_dropout_unavailable_reason}.` : ""]
+      .filter(Boolean).join(" · ");
+    renderMetrics(data.metrics);
+    const ps = data.prompt_summary || {};
+    $("expId").innerHTML = `Experiment <b>#${escapeHtml(data.experiment_id)}</b> · ${escapeHtml(METHOD_LABELS[data.method])}` +
+      (ps.n_points_used != null ? ` · ${escapeHtml(ps.n_points_used)} points` : "") +
+      (ps.strategy ? ` · ${escapeHtml(ps.strategy)}` : "") +
+      (data.has_ground_truth ? "" : "<br>No ground truth supplied: accuracy metrics are N/A.");
+    toast(`${METHOD_LABELS[data.method]} finished (experiment #${data.experiment_id})`);
+    loadHistory();
+  } catch (err) {
+    toast("Segmentation failed: " + (err.message === "Failed to fetch" ? `cannot reach backend at ${API_BASE}` : err.message), "error", 8000);
+  } finally {
+    setBusy(false);
+  }
+}
+
+function cell(v, digits = 4) {
+  const f = fmt(v, digits);
+  return f === null ? `<td class="na">N/A</td>` : `<td class="num">${f}</td>`;
+}
+
+async function loadHistory() {
+  const body = $("historyBody");
+  try {
+    const res = await fetch(`${API_BASE}/results`);
+    if (!res.ok) throw new Error(await apiErrorMessage(res));
+    const rows = await res.json();
+    if (!rows.length) { body.innerHTML = `<tr><td colspan="11" class="na">No experiments recorded yet.</td></tr>`; return; }
+    body.innerHTML = rows.map((r) => `<tr><td>${escapeHtml(r.id)}</td><td>${escapeHtml((r.timestamp || "").replace("T", " ").slice(0, 19))}</td>
+      <td>${escapeHtml(r.query_image_name)}</td><td>${escapeHtml(r.support_image_name)}</td>
+      <td>${escapeHtml(METHOD_LABELS[r.method] || r.method)}</td>
+      ${cell(r.dice)}${cell(r.iou)}${cell(r.precision)}${cell(r.recall)}${cell(r.boundary_iou)}${cell(r.inference_ms, 1)}</tr>`).join("");
+  } catch (err) {
+    body.innerHTML = `<tr><td colspan="11" class="na">Could not load history (${escapeHtml(err.message === "Failed to fetch" ? "backend unreachable" : err.message)}).</td></tr>`;
+  }
+}
+
+async function compare() {
+  if (!files.queryImage) { toast("Select a query image to compare its experiments.", "warn"); return; }
+  const name = files.queryImage.name;
+  try {
+    const res = await fetch(`${API_BASE}/compare/${encodeURIComponent(name)}`);
+    if (!res.ok) throw new Error(await apiErrorMessage(res));
+    const data = await res.json();
+    const cards = ["baseline", "fob", "enhanced"].map((m) => {
+      const r = data[m];
+      if (!r) return `<div class="cmp-card missing"><h4>${METHOD_LABELS[m]}</h4><div class="empty">Not run for this query yet.</div></div>`;
+      const dl = METRICS.map(([k, l]) => `<dt>${l}</dt><dd>${fmt(r[k]) ?? "N/A"}</dd>`).join("") +
+        `<dt>Time</dt><dd>${fmt(r.inference_ms, 1) ?? "N/A"} ms</dd><dt>Experiment</dt><dd>#${escapeHtml(r.id)}</dd>`;
+      return `<div class="cmp-card"><h4>${METHOD_LABELS[m]}</h4><dl>${dl}</dl></div>`;
+    }).join("");
+    $("modalTitle").textContent = `Method comparison — ${name}`;
+    $("modalBody").innerHTML = `<div class="cmp-grid">${cards}</div><p class="note">Latest experiment per method for this query image name. N/A = metric unavailable (no ground truth), not zero.</p>`;
+    $("modalBg").classList.add("open");
+    $("modalClose").focus();
+  } catch (err) {
+    toast("Compare failed: " + (err.message === "Failed to fetch" ? "backend unreachable" : err.message), "error");
+  }
+}
+
+async function checkHealth() {
+  try {
+    const res = await fetch(`${API_BASE}/health`);
+    const h = await res.json();
+    $("apiDot").className = "dot " + (h.sam_loaded ? "ok" : "warn");
+    $("apiStatus").textContent = h.sam_loaded ? `Backend online · SAM loaded (${h.device})` : `Backend online · SAM not loaded${h.detail ? " — " + h.detail : ""}`;
+  } catch (_) {
+    $("apiDot").className = "dot bad";
+    $("apiStatus").textContent = `Backend unreachable (${API_BASE})`;
+  }
+}
+
+function closeModal() { $("modalBg").classList.remove("open"); $("compareBtn").focus(); }
+
+document.addEventListener("DOMContentLoaded", () => {
+  ["supportImage", "supportMask", "queryImage", "queryMask"].forEach(bindFile);
+  $("method").addEventListener("change", () => { $("methodHelp").textContent = METHOD_HELP[$("method").value]; });
+  $("methodHelp").textContent = METHOD_HELP[$("method").value];
+  $("segmentBtn").addEventListener("click", segment);
+  $("compareBtn").addEventListener("click", compare);
+  $("refreshBtn").addEventListener("click", loadHistory);
+  $("modalClose").addEventListener("click", closeModal);
+  $("modalBg").addEventListener("click", (e) => { if (e.target === $("modalBg")) closeModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && $("modalBg").classList.contains("open")) closeModal(); });
+  renderMetrics(null);
+  updateButtons();
+  checkHealth();
+  loadHistory();
+});
+</script>
+</body>
+</html>

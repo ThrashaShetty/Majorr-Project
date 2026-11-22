@@ -1,0 +1,11 @@
+EXIT 0
+47/53 case_059_slice_030 box=0.749 enh=0.267 box_piou=0.844 box_stab=0.664
+48/53 case_059_slice_035 box=0.893 enh=0.465 box_piou=0.819 box_stab=0.605
+49/53 case_059_slice_040 box=0.744 enh=0.000 box_piou=0.908 box_stab=0.837
+50/53 case_062_slice_060 box=0.813 enh=0.462 box_piou=0.935 box_stab=0.890
+51/53 case_062_slice_065 box=0.557 enh=0.042 box_piou=0.934 box_stab=0.880
+52/53 case_062_slice_070 box=0.401 enh=0.041 box_piou=0.945 box_stab=0.902
+53/53 case_062_slice_075 box=0.313 enh=0.454 box_piou=0.901 box_stab=0.957
+parity box: True parity enh: True
+
+[exited with code 0]

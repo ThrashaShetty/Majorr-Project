@@ -1,0 +1,5 @@
+sample,set,multimask_dice,multimask_px,single_dice,single_px,gt_px
+case_020_slice_070,development,0.15,6925,0.114,9328,565
+case_052_slice_075,development,0.173,26680,0.376,10904,2521
+case_052_slice_080,development,0.148,44735,0.516,10175,3578
+case_052_slice_095,development,0.014,49734,0.041,16294,340

@@ -1,0 +1,150 @@
+{
+ "sample": "case_052_slice_080",
+ "support": "case_026_slice_000.png",
+ "box": [
+  43,
+  259,
+  125,
+  364
+ ],
+ "gt_box": [
+  57,
+  238,
+  119,
+  326
+ ],
+ "gt_in_box": 0.8239239798770263,
+ "gt_px": 3578,
+ "body_px": 142532,
+ "enh_px": 44735,
+ "enh_mask_in_body": 0.9997093997988152,
+ "pos": [
+  [
+   82,
+   331
+  ]
+ ],
+ "pos_in_gt": [
+  false
+ ],
+ "pos_grey": [
+  160
+ ],
+ "n_neg": 15,
+ "neg_in_gt": 0,
+ "spr_candidates": 335,
+ "adaptive": {
+  "n_points": 15,
+  "spread": "tight",
+  "strategy": "small_structure",
+  "min_distance": 8,
+  "fg_ratio": 0.0218505859375,
+  "edge_density": 0.00124359130859375
+ },
+ "ablation": {
+  "box|mm=1": {
+   "dice": 0.857,
+   "px": 4222,
+   "idx": 1,
+   "areas": [
+    4190,
+    4222,
+    414
+   ],
+   "scores": [
+    0.838,
+    0.839,
+    0.742
+   ]
+  },
+  "box|mm=0": {
+   "dice": 0.025,
+   "px": 470,
+   "idx": 0,
+   "areas": [
+    470
+   ],
+   "scores": [
+    0.494
+   ]
+  },
+  "box+pos|mm=1": {
+   "dice": 0.0,
+   "px": 401,
+   "idx": 2,
+   "areas": [
+    4466,
+    4519,
+    401
+   ],
+   "scores": [
+    0.915,
+    0.915,
+    0.942
+   ]
+  },
+  "box+pos|mm=0": {
+   "dice": 0.0,
+   "px": 407,
+   "idx": 0,
+   "areas": [
+    407
+   ],
+   "scores": [
+    0.911
+   ]
+  },
+  "box+neg|mm=1": {
+   "dice": 0.368,
+   "px": 15878,
+   "idx": 1,
+   "areas": [
+    36186,
+    15878,
+    9428
+   ],
+   "scores": [
+    0.849,
+    0.885,
+    0.825
+   ]
+  },
+  "box+neg|mm=0": {
+   "dice": 0.78,
+   "px": 5589,
+   "idx": 0,
+   "areas": [
+    5589
+   ],
+   "scores": [
+    0.879
+   ]
+  },
+  "box+pos+neg|mm=1": {
+   "dice": 0.148,
+   "px": 44735,
+   "idx": 0,
+   "areas": [
+    44735,
+    20614,
+    14779
+   ],
+   "scores": [
+    0.835,
+    0.814,
+    0.735
+   ]
+  },
+  "box+pos+neg|mm=0": {
+   "dice": 0.516,
+   "px": 10175,
+   "idx": 0,
+   "areas": [
+    10175
+   ],
+   "scores": [
+    0.788
+   ]
+  }
+ }
+}

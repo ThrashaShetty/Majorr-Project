@@ -1,0 +1,15 @@
+EXIT 0
+2026-11-22 16:36:53,436 | INFO     | run_evaluation | Progress 53/53 samples
+2026-11-22 16:36:53,458 | INFO     | run_evaluation | Wrote C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\v2\baseline_results.csv
+2026-11-22 16:36:53,493 | INFO     | run_evaluation | Wrote C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\v2\fob_results.csv
+2026-11-22 16:36:53,496 | INFO     | run_evaluation | Wrote C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\v2\enhanced_results.csv
+2026-11-22 16:36:57,848 | INFO     | run_evaluation | Charts written to C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\v2\charts
+
+Method        n   ok fail              dice               iou         precision            recall      boundary_iou               ms
+------------------------------------------------------------------------------------------------------------------------------------
+baseline     53   53    0   0.3565 ± 0.3906   0.2986 ± 0.3469   0.3809 ± 0.4146   0.3856 ± 0.4357   0.2734 ± 0.3276   9321.6 ± 690.9 
+fob          53   52    1   0.0678 ± 0.1006   0.0382 ± 0.0608   0.0479 ± 0.0752   0.2762 ± 0.3509   0.0328 ± 0.0536  19820.8 ± 8107.1
+enhanced     53   53    0   0.3321 ± 0.2913   0.2431 ± 0.2566   0.2671 ± 0.2736   0.5933 ± 0.3975   0.2207 ± 0.2380  18686.0 ± 1986.8
+NOTE: fob: 1 of 53 samples FAILED (see CSV 'error').
+
+[exited with code 0]

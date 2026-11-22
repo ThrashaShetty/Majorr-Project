@@ -1,0 +1,8 @@
+EXIT 0
+153/156 case_063_slice_030 sup=case_026_slice_005 base=0.919 enh=0.004 single=0.004 A5=box ratio=0.91
+154/156 case_063_slice_035 sup=case_013_slice_030 base=0.518 enh=0.000 single=0.000 A5=box ratio=0.97
+155/156 case_063_slice_040 sup=case_046_slice_080 base=0.938 enh=0.557 single=0.101 A5=box ratio=1.01
+156/156 case_063_slice_045 sup=case_026_slice_005 base=0.000 enh=0.000 single=0.000 A5=enhanced ratio=0.25
+DONE 156
+
+[exited with code 0]

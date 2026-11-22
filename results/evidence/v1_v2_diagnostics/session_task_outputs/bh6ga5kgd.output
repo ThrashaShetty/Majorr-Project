@@ -1,0 +1,23 @@
+EXIT 0
+2026-11-22 15:52:30,201 | INFO     | src.baseline | [baseline] 1/1 done (1 ok)
+2026-11-22 15:52:30,395 | INFO     | src.baseline | [fob] 1/1 done (1 ok)
+2026-11-22 15:52:30,608 | INFO     | src.baseline | [enhanced] 1/1 done (1 ok)
+2026-11-22 15:52:39,934 | INFO     | src.baseline | [baseline] 1/1 done (1 ok)
+2026-11-22 15:52:40,142 | INFO     | src.baseline | [fob] 1/1 done (1 ok)
+2026-11-22 15:52:40,351 | INFO     | src.baseline | [enhanced] 1/1 done (1 ok)
+2026-11-22 15:52:49,684 | INFO     | src.baseline | [baseline] 1/1 done (1 ok)
+2026-11-22 15:52:59,032 | INFO     | src.baseline | [fob] 1/1 done (1 ok)
+2026-11-22 15:53:08,303 | INFO     | src.baseline | [enhanced] 1/1 done (1 ok)
+2026-11-22 15:53:08,303 | INFO     | run_evaluation | Progress 53/53 samples
+2026-11-22 15:53:08,326 | INFO     | run_evaluation | Wrote results\baseline_results.csv
+2026-11-22 15:53:08,370 | INFO     | run_evaluation | Wrote results\fob_results.csv
+2026-11-22 15:53:08,375 | INFO     | run_evaluation | Wrote results\enhanced_results.csv
+2026-11-22 15:53:10,960 | INFO     | run_evaluation | Charts written to results/charts/
+
+Method        n   ok fail              dice               iou         precision            recall      boundary_iou               ms
+------------------------------------------------------------------------------------------------------------------------------------
+baseline     53   53    0   0.3565 ± 0.3906   0.2986 ± 0.3469   0.3809 ± 0.4146   0.3856 ± 0.4357   0.2734 ± 0.3276  13527.2 ± 27815.0
+fob          53   53    0   0.0115 ± 0.0205   0.0059 ± 0.0106   0.0064 ± 0.0130   0.2943 ± 0.4471   0.0043 ± 0.0100  29052.3 ± 53356.7
+enhanced     53   53    0   0.0556 ± 0.1111   0.0332 ± 0.0809   0.0339 ± 0.0857   0.4485 ± 0.4933   0.0243 ± 0.0647  23172.9 ± 27970.1
+
+[exited with code 0]

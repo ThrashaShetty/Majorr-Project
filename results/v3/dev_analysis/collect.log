@@ -1,0 +1,54 @@
+ 1/53 case_003_slice_020 box=0.876 enh=0.233 box_piou=0.937 box_stab=0.935
+ 2/53 case_003_slice_025 box=0.639 enh=0.491 box_piou=0.814 box_stab=0.628
+ 3/53 case_003_slice_030 box=0.000 enh=0.009 box_piou=0.859 box_stab=0.866
+ 4/53 case_006_slice_065 box=0.000 enh=0.058 box_piou=0.924 box_stab=0.943
+ 5/53 case_006_slice_070 box=0.000 enh=0.246 box_piou=0.902 box_stab=0.977
+ 6/53 case_006_slice_075 box=0.000 enh=0.071 box_piou=0.874 box_stab=0.944
+ 7/53 case_006_slice_080 box=0.757 enh=0.390 box_piou=0.965 box_stab=0.955
+ 8/53 case_006_slice_085 box=0.959 enh=0.831 box_piou=0.957 box_stab=0.972
+ 9/53 case_006_slice_090 box=0.925 enh=0.921 box_piou=0.979 box_stab=0.973
+10/53 case_006_slice_095 box=0.960 enh=0.937 box_piou=0.984 box_stab=0.986
+11/53 case_006_slice_100 box=0.937 enh=0.911 box_piou=0.982 box_stab=0.981
+12/53 case_006_slice_105 box=0.901 enh=0.695 box_piou=0.971 box_stab=0.933
+13/53 case_006_slice_110 box=0.916 enh=0.832 box_piou=0.982 box_stab=0.961
+14/53 case_006_slice_115 box=0.556 enh=0.539 box_piou=0.903 box_stab=0.914
+15/53 case_014_slice_025 box=0.000 enh=0.018 box_piou=0.915 box_stab=0.963
+16/53 case_014_slice_030 box=0.678 enh=0.568 box_piou=0.933 box_stab=0.882
+17/53 case_014_slice_035 box=0.006 enh=0.572 box_piou=0.903 box_stab=0.915
+18/53 case_014_slice_040 box=0.723 enh=0.906 box_piou=0.971 box_stab=0.958
+19/53 case_020_slice_070 box=0.000 enh=0.150 box_piou=0.976 box_stab=0.981
+20/53 case_020_slice_075 box=0.000 enh=0.000 box_piou=0.982 box_stab=0.981
+21/53 case_020_slice_080 box=0.000 enh=0.000 box_piou=0.976 box_stab=0.980
+22/53 case_020_slice_085 box=0.000 enh=0.002 box_piou=0.953 box_stab=0.982
+23/53 case_020_slice_090 box=0.000 enh=0.001 box_piou=0.875 box_stab=0.930
+24/53 case_020_slice_095 box=0.050 enh=0.354 box_piou=0.882 box_stab=0.925
+25/53 case_020_slice_100 box=0.027 enh=0.041 box_piou=0.916 box_stab=0.910
+26/53 case_020_slice_105 box=0.000 enh=0.406 box_piou=0.834 box_stab=0.861
+27/53 case_020_slice_110 box=0.010 enh=0.429 box_piou=0.904 box_stab=0.872
+28/53 case_020_slice_115 box=0.013 enh=0.394 box_piou=0.941 box_stab=0.906
+29/53 case_020_slice_120 box=0.000 enh=0.472 box_piou=0.949 box_stab=0.945
+30/53 case_020_slice_125 box=0.003 enh=0.408 box_piou=0.929 box_stab=0.878
+31/53 case_020_slice_130 box=0.466 enh=0.166 box_piou=0.927 box_stab=0.903
+32/53 case_020_slice_135 box=0.000 enh=0.094 box_piou=0.928 box_stab=0.975
+33/53 case_020_slice_140 box=0.000 enh=0.039 box_piou=0.937 box_stab=0.965
+34/53 case_021_slice_040 box=0.744 enh=0.216 box_piou=0.757 box_stab=0.675
+35/53 case_021_slice_045 box=0.000 enh=0.056 box_piou=0.807 box_stab=0.961
+36/53 case_021_slice_050 box=0.000 enh=0.305 box_piou=0.771 box_stab=0.854
+37/53 case_021_slice_055 box=0.000 enh=0.453 box_piou=0.856 box_stab=0.943
+38/53 case_021_slice_060 box=0.000 enh=0.064 box_piou=0.815 box_stab=0.934
+39/53 case_021_slice_065 box=0.942 enh=0.042 box_piou=0.964 box_stab=0.953
+40/53 case_021_slice_070 box=0.019 enh=0.219 box_piou=0.789 box_stab=0.812
+41/53 case_052_slice_075 box=0.000 enh=0.173 box_piou=0.890 box_stab=0.789
+42/53 case_052_slice_080 box=0.857 enh=0.148 box_piou=0.839 box_stab=0.879
+43/53 case_052_slice_085 box=0.863 enh=0.841 box_piou=0.971 box_stab=0.944
+44/53 case_052_slice_090 box=0.000 enh=0.687 box_piou=0.890 box_stab=0.932
+45/53 case_052_slice_095 box=0.515 enh=0.014 box_piou=0.933 box_stab=0.927
+46/53 case_059_slice_025 box=0.082 enh=0.465 box_piou=0.786 box_stab=0.683
+47/53 case_059_slice_030 box=0.749 enh=0.267 box_piou=0.844 box_stab=0.664
+48/53 case_059_slice_035 box=0.893 enh=0.465 box_piou=0.819 box_stab=0.605
+49/53 case_059_slice_040 box=0.744 enh=0.000 box_piou=0.908 box_stab=0.837
+50/53 case_062_slice_060 box=0.813 enh=0.462 box_piou=0.935 box_stab=0.890
+51/53 case_062_slice_065 box=0.557 enh=0.042 box_piou=0.934 box_stab=0.880
+52/53 case_062_slice_070 box=0.401 enh=0.041 box_piou=0.945 box_stab=0.902
+53/53 case_062_slice_075 box=0.313 enh=0.454 box_piou=0.901 box_stab=0.957
+parity box: True parity enh: True

@@ -1,0 +1,157 @@
+  1/156 case_002_slice_070 sup=case_012_slice_095 base=0.327 enh=0.104 single=0.194 A5=box ratio=1.18
+  2/156 case_002_slice_075 sup=case_012_slice_100 base=0.872 enh=0.280 single=0.404 A5=box ratio=0.76
+  3/156 case_002_slice_080 sup=case_008_slice_020 base=0.913 enh=0.796 single=0.436 A5=box ratio=0.94
+  4/156 case_002_slice_085 sup=case_008_slice_025 base=0.720 enh=0.632 single=0.644 A5=box ratio=1.48
+  5/156 case_008_slice_010 sup=case_046_slice_070 base=0.826 enh=0.512 single=0.322 A5=box ratio=0.85
+  6/156 case_008_slice_015 sup=case_012_slice_100 base=0.965 enh=0.151 single=0.032 A5=box ratio=0.68
+  7/156 case_008_slice_020 sup=case_012_slice_105 base=0.778 enh=0.258 single=0.575 A5=box ratio=1.07
+  8/156 case_008_slice_025 sup=case_025_slice_050 base=0.000 enh=0.720 single=0.652 A5=box ratio=0.86
+  9/156 case_009_slice_010 sup=case_013_slice_030 base=0.122 enh=0.010 single=0.165 A5=enhanced ratio=0.36
+ 10/156 case_009_slice_015 sup=case_013_slice_030 base=0.958 enh=0.938 single=0.925 A5=box ratio=0.86
+ 11/156 case_009_slice_020 sup=case_013_slice_030 base=0.970 enh=0.204 single=0.036 A5=box ratio=1.29
+ 12/156 case_009_slice_025 sup=case_013_slice_030 base=0.630 enh=0.362 single=0.067 A5=box ratio=0.91
+ 13/156 case_009_slice_030 sup=case_013_slice_045 base=0.793 enh=0.000 single=0.000 A5=box ratio=1.17
+ 14/156 case_010_slice_025 sup=case_008_slice_015 base=0.504 enh=0.048 single=0.122 A5=box ratio=0.79
+ 15/156 case_010_slice_030 sup=case_008_slice_020 base=0.000 enh=0.350 single=0.641 A5=enhanced ratio=0.16
+ 16/156 case_010_slice_035 sup=case_008_slice_020 base=0.000 enh=0.504 single=0.374 A5=enhanced ratio=0.39
+ 17/156 case_012_slice_065 sup=case_017_slice_060 base=0.000 enh=0.130 single=0.064 A5=enhanced ratio=0.39
+ 18/156 case_012_slice_070 sup=case_017_slice_060 base=0.000 enh=0.343 single=0.211 A5=enhanced ratio=0.12
+ 19/156 case_012_slice_075 sup=case_017_slice_060 base=0.000 enh=0.018 single=0.037 A5=enhanced ratio=0.11
+ 20/156 case_012_slice_080 sup=case_017_slice_060 base=0.000 enh=0.000 single=0.000 A5=enhanced ratio=0.11
+ 21/156 case_012_slice_085 sup=case_017_slice_060 base=0.000 enh=0.003 single=0.005 A5=enhanced ratio=0.13
+ 22/156 case_012_slice_090 sup=case_017_slice_060 base=0.006 enh=0.007 single=0.011 A5=enhanced ratio=0.22
+ 23/156 case_012_slice_095 sup=case_017_slice_060 base=0.237 enh=0.572 single=0.109 A5=box ratio=0.74
+ 24/156 case_012_slice_100 sup=case_017_slice_060 base=0.231 enh=0.474 single=0.010 A5=box ratio=0.69
+ 25/156 case_012_slice_105 sup=case_017_slice_060 base=0.000 enh=0.273 single=0.014 A5=enhanced ratio=0.12
+ 26/156 case_012_slice_110 sup=case_017_slice_060 base=0.000 enh=0.324 single=0.013 A5=enhanced ratio=0.13
+ 27/156 case_012_slice_115 sup=case_017_slice_060 base=0.000 enh=0.020 single=0.020 A5=enhanced ratio=0.14
+ 28/156 case_012_slice_120 sup=case_017_slice_065 base=0.000 enh=0.024 single=0.024 A5=enhanced ratio=0.10
+ 29/156 case_012_slice_125 sup=case_017_slice_070 base=0.750 enh=0.062 single=0.001 A5=box ratio=1.08
+ 30/156 case_012_slice_130 sup=case_017_slice_075 base=0.834 enh=0.011 single=0.016 A5=box ratio=1.16
+ 31/156 case_012_slice_135 sup=case_017_slice_080 base=0.786 enh=0.317 single=0.442 A5=box ratio=1.55
+ 32/156 case_012_slice_140 sup=case_017_slice_080 base=0.645 enh=0.326 single=0.305 A5=box ratio=0.69
+ 33/156 case_013_slice_030 sup=case_009_slice_025 base=0.946 enh=0.088 single=0.001 A5=box ratio=0.55
+ 34/156 case_013_slice_035 sup=case_009_slice_025 base=0.961 enh=0.050 single=0.344 A5=box ratio=0.67
+ 35/156 case_013_slice_040 sup=case_009_slice_025 base=0.954 enh=0.121 single=0.149 A5=box ratio=0.76
+ 36/156 case_013_slice_045 sup=case_009_slice_025 base=0.943 enh=0.052 single=0.052 A5=box ratio=0.93
+ 37/156 case_013_slice_050 sup=case_009_slice_025 base=0.974 enh=0.428 single=0.000 A5=box ratio=1.16
+ 38/156 case_013_slice_055 sup=case_009_slice_030 base=0.980 enh=0.639 single=0.336 A5=box ratio=1.63
+ 39/156 case_013_slice_060 sup=case_009_slice_030 base=0.926 enh=0.700 single=0.834 A5=box ratio=1.32
+ 40/156 case_013_slice_065 sup=case_060_slice_090 base=0.000 enh=0.018 single=0.020 A5=box ratio=1.24
+ 41/156 case_016_slice_040 sup=case_013_slice_030 base=0.000 enh=0.014 single=0.006 A5=enhanced ratio=0.10
+ 42/156 case_016_slice_045 sup=case_002_slice_075 base=0.942 enh=0.191 single=0.019 A5=box ratio=0.87
+ 43/156 case_017_slice_060 sup=case_012_slice_110 base=0.433 enh=0.173 single=0.207 A5=box ratio=0.70
+ 44/156 case_017_slice_065 sup=case_012_slice_110 base=0.413 enh=0.142 single=0.234 A5=box ratio=1.07
+ 45/156 case_017_slice_070 sup=case_012_slice_115 base=0.897 enh=0.304 single=0.236 A5=box ratio=0.56
+ 46/156 case_017_slice_075 sup=case_025_slice_055 base=0.954 enh=0.406 single=0.580 A5=box ratio=1.01
+ 47/156 case_017_slice_080 sup=case_025_slice_065 base=0.510 enh=0.671 single=0.677 A5=box ratio=1.03
+ 48/156 case_018_slice_075 sup=case_028_slice_025 base=0.832 enh=0.085 single=0.216 A5=enhanced ratio=0.40
+ 49/156 case_018_slice_080 sup=case_022_slice_075 base=0.916 enh=0.189 single=0.306 A5=enhanced ratio=0.45
+ 50/156 case_018_slice_085 sup=case_022_slice_075 base=0.941 enh=0.063 single=0.083 A5=box ratio=0.61
+ 51/156 case_018_slice_090 sup=case_022_slice_075 base=0.951 enh=0.286 single=0.288 A5=box ratio=0.78
+ 52/156 case_018_slice_095 sup=case_022_slice_070 base=0.649 enh=0.175 single=0.277 A5=box ratio=0.69
+ 53/156 case_018_slice_100 sup=case_022_slice_070 base=0.542 enh=0.178 single=0.341 A5=box ratio=0.75
+ 54/156 case_018_slice_105 sup=case_022_slice_070 base=0.540 enh=0.258 single=0.240 A5=box ratio=0.78
+ 55/156 case_018_slice_110 sup=case_022_slice_100 base=0.908 enh=0.453 single=0.495 A5=box ratio=1.06
+ 56/156 case_018_slice_115 sup=case_022_slice_100 base=0.834 enh=0.007 single=0.007 A5=box ratio=0.79
+ 57/156 case_018_slice_120 sup=case_022_slice_100 base=0.016 enh=0.039 single=0.018 A5=enhanced ratio=0.37
+ 58/156 case_018_slice_125 sup=case_028_slice_035 base=0.116 enh=0.526 single=0.776 A5=enhanced ratio=0.31
+ 59/156 case_018_slice_130 sup=case_028_slice_035 base=0.688 enh=0.524 single=0.474 A5=box ratio=0.73
+ 60/156 case_019_slice_020 sup=case_063_slice_040 base=0.000 enh=0.347 single=0.527 A5=enhanced ratio=0.11
+ 61/156 case_019_slice_025 sup=case_026_slice_000 base=0.717 enh=0.727 single=0.919 A5=box ratio=0.87
+ 62/156 case_019_slice_030 sup=case_013_slice_050 base=0.684 enh=0.709 single=0.777 A5=box ratio=1.39
+ 63/156 case_019_slice_035 sup=case_024_slice_080 base=0.572 enh=0.742 single=0.788 A5=enhanced ratio=3.59
+ 64/156 case_022_slice_055 sup=case_028_slice_025 base=0.000 enh=0.351 single=0.151 A5=box ratio=0.87
+ 65/156 case_022_slice_060 sup=case_028_slice_025 base=0.000 enh=0.633 single=0.366 A5=box ratio=0.83
+ 66/156 case_022_slice_065 sup=case_018_slice_095 base=0.000 enh=0.478 single=0.000 A5=box ratio=0.92
+ 67/156 case_022_slice_070 sup=case_018_slice_095 base=0.621 enh=0.001 single=0.013 A5=box ratio=1.53
+ 68/156 case_022_slice_075 sup=case_018_slice_095 base=0.713 enh=0.706 single=0.903 A5=box ratio=1.54
+ 69/156 case_022_slice_080 sup=case_018_slice_095 base=0.795 enh=0.753 single=0.501 A5=box ratio=1.55
+ 70/156 case_022_slice_085 sup=case_018_slice_095 base=0.958 enh=0.923 single=0.909 A5=box ratio=1.23
+ 71/156 case_022_slice_090 sup=case_018_slice_095 base=0.953 enh=0.968 single=0.970 A5=box ratio=1.40
+ 72/156 case_022_slice_095 sup=case_018_slice_095 base=0.962 enh=0.981 single=0.981 A5=box ratio=1.32
+ 73/156 case_022_slice_100 sup=case_018_slice_100 base=0.976 enh=0.633 single=0.679 A5=box ratio=1.00
+ 74/156 case_022_slice_105 sup=case_018_slice_100 base=0.973 enh=0.807 single=0.947 A5=box ratio=0.89
+ 75/156 case_022_slice_110 sup=case_018_slice_095 base=0.950 enh=0.953 single=0.956 A5=box ratio=1.01
+ 76/156 case_022_slice_115 sup=case_028_slice_030 base=0.931 enh=0.560 single=0.613 A5=box ratio=0.62
+ 77/156 case_022_slice_120 sup=case_028_slice_030 base=0.004 enh=0.287 single=0.317 A5=box ratio=1.14
+ 78/156 case_024_slice_070 sup=case_031_slice_040 base=0.000 enh=0.013 single=0.025 A5=box ratio=1.08
+ 79/156 case_024_slice_075 sup=case_031_slice_040 base=0.000 enh=0.188 single=0.171 A5=enhanced ratio=0.17
+ 80/156 case_024_slice_080 sup=case_041_slice_075 base=0.000 enh=0.000 single=0.032 A5=box ratio=1.76
+ 81/156 case_025_slice_045 sup=case_017_slice_060 base=0.905 enh=0.430 single=0.405 A5=enhanced ratio=0.23
+ 82/156 case_025_slice_050 sup=case_017_slice_060 base=0.940 enh=0.842 single=0.722 A5=box ratio=1.74
+ 83/156 case_025_slice_055 sup=case_017_slice_070 base=0.874 enh=0.593 single=0.556 A5=box ratio=1.19
+ 84/156 case_025_slice_060 sup=case_017_slice_075 base=0.898 enh=0.876 single=0.826 A5=box ratio=0.89
+ 85/156 case_025_slice_065 sup=case_053_slice_130 base=0.521 enh=0.787 single=0.567 A5=enhanced ratio=0.24
+ 86/156 case_026_slice_000 sup=case_063_slice_040 base=0.690 enh=0.269 single=0.540 A5=box ratio=1.51
+ 87/156 case_026_slice_005 sup=case_060_slice_075 base=0.916 enh=0.533 single=0.285 A5=box ratio=1.70
+ 88/156 case_026_slice_010 sup=case_060_slice_080 base=0.579 enh=0.269 single=0.481 A5=box ratio=1.86
+ 89/156 case_027_slice_085 sup=case_017_slice_060 base=0.000 enh=0.273 single=0.346 A5=enhanced ratio=0.20
+ 90/156 case_027_slice_090 sup=case_012_slice_070 base=0.479 enh=0.190 single=0.287 A5=box ratio=1.28
+ 91/156 case_027_slice_095 sup=case_012_slice_075 base=0.400 enh=0.257 single=0.327 A5=box ratio=0.90
+ 92/156 case_027_slice_100 sup=case_041_slice_075 base=0.203 enh=0.051 single=0.052 A5=box ratio=1.37
+ 93/156 case_028_slice_025 sup=case_022_slice_080 base=0.914 enh=0.346 single=0.515 A5=box ratio=0.62
+ 94/156 case_028_slice_030 sup=case_022_slice_100 base=0.972 enh=0.958 single=0.946 A5=box ratio=1.03
+ 95/156 case_028_slice_035 sup=case_018_slice_125 base=0.835 enh=0.750 single=0.602 A5=box ratio=0.89
+ 96/156 case_029_slice_070 sup=case_032_slice_080 base=0.883 enh=0.358 single=0.459 A5=enhanced ratio=0.47
+ 97/156 case_029_slice_075 sup=case_032_slice_080 base=0.958 enh=0.887 single=0.648 A5=box ratio=0.94
+ 98/156 case_029_slice_080 sup=case_032_slice_085 base=0.663 enh=0.744 single=0.138 A5=box ratio=1.13
+ 99/156 case_029_slice_085 sup=case_032_slice_090 base=0.332 enh=0.115 single=0.159 A5=box ratio=1.02
+100/156 case_031_slice_030 sup=case_024_slice_075 base=0.835 enh=0.014 single=0.000 A5=box ratio=1.15
+101/156 case_031_slice_035 sup=case_024_slice_070 base=0.041 enh=0.466 single=0.472 A5=box ratio=1.52
+102/156 case_031_slice_040 sup=case_024_slice_070 base=0.037 enh=0.696 single=0.482 A5=box ratio=1.61
+103/156 case_031_slice_045 sup=case_024_slice_075 base=0.000 enh=0.000 single=0.000 A5=enhanced ratio=0.29
+104/156 case_032_slice_075 sup=case_017_slice_060 base=0.809 enh=0.304 single=0.596 A5=box ratio=0.77
+105/156 case_032_slice_080 sup=case_029_slice_070 base=0.746 enh=0.657 single=0.549 A5=box ratio=1.66
+106/156 case_032_slice_085 sup=case_017_slice_060 base=0.002 enh=0.773 single=0.785 A5=enhanced ratio=0.12
+107/156 case_032_slice_090 sup=case_017_slice_065 base=0.000 enh=0.000 single=0.000 A5=enhanced ratio=0.19
+108/156 case_032_slice_095 sup=case_008_slice_025 base=0.070 enh=0.011 single=0.033 A5=box ratio=1.25
+109/156 case_033_slice_050 sup=case_008_slice_015 base=0.341 enh=0.091 single=0.201 A5=box ratio=0.64
+110/156 case_033_slice_055 sup=case_008_slice_015 base=0.938 enh=0.085 single=0.370 A5=enhanced ratio=0.50
+111/156 case_033_slice_060 sup=case_012_slice_095 base=0.763 enh=0.264 single=0.522 A5=box ratio=0.96
+112/156 case_033_slice_065 sup=case_012_slice_105 base=0.962 enh=0.352 single=0.233 A5=box ratio=0.56
+113/156 case_033_slice_070 sup=case_008_slice_025 base=0.883 enh=0.859 single=0.819 A5=box ratio=1.12
+114/156 case_038_slice_080 sup=case_056_slice_020 base=0.000 enh=0.380 single=0.373 A5=box ratio=0.76
+115/156 case_038_slice_085 sup=case_025_slice_060 base=0.767 enh=0.114 single=0.014 A5=box ratio=0.79
+116/156 case_040_slice_060 sup=case_056_slice_020 base=0.000 enh=0.093 single=0.243 A5=enhanced ratio=0.17
+117/156 case_040_slice_065 sup=case_056_slice_020 base=0.000 enh=0.001 single=0.010 A5=box ratio=0.76
+118/156 case_040_slice_070 sup=case_056_slice_020 base=0.000 enh=0.338 single=0.010 A5=enhanced ratio=0.49
+119/156 case_041_slice_065 sup=case_008_slice_020 base=0.494 enh=0.252 single=0.135 A5=box ratio=0.67
+120/156 case_041_slice_070 sup=case_008_slice_020 base=0.822 enh=0.344 single=0.271 A5=box ratio=0.63
+121/156 case_041_slice_075 sup=case_008_slice_020 base=0.000 enh=0.143 single=0.110 A5=enhanced ratio=0.06
+122/156 case_044_slice_065 sup=case_045_slice_080 base=0.000 enh=0.000 single=0.000 A5=box ratio=1.40
+123/156 case_044_slice_070 sup=case_045_slice_080 base=0.677 enh=0.442 single=0.376 A5=box ratio=1.79
+124/156 case_045_slice_080 sup=case_056_slice_020 base=0.000 enh=0.081 single=0.005 A5=box ratio=0.64
+125/156 case_045_slice_085 sup=case_056_slice_020 base=0.000 enh=0.214 single=0.214 A5=enhanced ratio=0.35
+126/156 case_045_slice_090 sup=case_056_slice_020 base=0.000 enh=0.003 single=0.009 A5=box ratio=0.65
+127/156 case_045_slice_095 sup=case_056_slice_020 base=0.000 enh=0.123 single=0.108 A5=box ratio=0.92
+128/156 case_046_slice_070 sup=case_017_slice_065 base=0.857 enh=0.334 single=0.452 A5=box ratio=0.96
+129/156 case_046_slice_075 sup=case_008_slice_020 base=0.000 enh=0.003 single=0.009 A5=enhanced ratio=0.41
+130/156 case_046_slice_080 sup=case_008_slice_020 base=0.619 enh=0.343 single=0.185 A5=box ratio=0.93
+131/156 case_047_slice_065 sup=case_056_slice_020 base=0.560 enh=0.118 single=0.007 A5=box ratio=1.11
+132/156 case_047_slice_070 sup=case_056_slice_020 base=0.539 enh=0.001 single=0.004 A5=box ratio=1.46
+133/156 case_047_slice_075 sup=case_056_slice_020 base=0.393 enh=0.468 single=0.317 A5=box ratio=1.47
+134/156 case_047_slice_080 sup=case_056_slice_020 base=0.290 enh=0.000 single=0.001 A5=box ratio=1.10
+135/156 case_047_slice_085 sup=case_032_slice_095 base=0.600 enh=0.342 single=0.313 A5=enhanced ratio=2.07
+136/156 case_049_slice_020 sup=case_026_slice_005 base=0.244 enh=0.231 single=0.723 A5=box ratio=0.82
+137/156 case_049_slice_025 sup=case_063_slice_040 base=0.856 enh=0.091 single=0.488 A5=box ratio=0.60
+138/156 case_049_slice_030 sup=case_063_slice_040 base=0.909 enh=0.894 single=0.904 A5=box ratio=0.80
+139/156 case_049_slice_035 sup=case_056_slice_020 base=0.605 enh=0.517 single=0.526 A5=box ratio=1.55
+140/156 case_049_slice_040 sup=case_056_slice_020 base=0.419 enh=0.418 single=0.362 A5=box ratio=0.85
+141/156 case_053_slice_120 sup=case_008_slice_020 base=0.936 enh=0.417 single=0.762 A5=box ratio=0.53
+142/156 case_053_slice_125 sup=case_017_slice_070 base=0.854 enh=0.519 single=0.481 A5=box ratio=1.11
+143/156 case_053_slice_130 sup=case_025_slice_060 base=0.775 enh=0.279 single=0.391 A5=box ratio=0.75
+144/156 case_056_slice_020 sup=case_047_slice_065 base=0.729 enh=0.757 single=0.743 A5=box ratio=0.80
+145/156 case_056_slice_025 sup=case_047_slice_065 base=0.000 enh=0.694 single=0.363 A5=box ratio=0.80
+146/156 case_060_slice_075 sup=case_009_slice_025 base=0.932 enh=0.000 single=0.001 A5=box ratio=0.64
+147/156 case_060_slice_080 sup=case_009_slice_025 base=0.953 enh=0.365 single=0.049 A5=box ratio=1.25
+148/156 case_060_slice_085 sup=case_026_slice_010 base=0.000 enh=0.152 single=0.059 A5=enhanced ratio=0.40
+149/156 case_060_slice_090 sup=case_012_slice_140 base=0.000 enh=0.112 single=0.047 A5=box ratio=1.39
+150/156 case_061_slice_065 sup=case_026_slice_005 base=0.000 enh=0.455 single=0.001 A5=enhanced ratio=0.07
+151/156 case_061_slice_070 sup=case_060_slice_075 base=0.706 enh=0.001 single=0.001 A5=box ratio=1.19
+152/156 case_063_slice_025 sup=case_013_slice_030 base=0.634 enh=0.289 single=0.284 A5=box ratio=0.99
+153/156 case_063_slice_030 sup=case_026_slice_005 base=0.919 enh=0.004 single=0.004 A5=box ratio=0.91
+154/156 case_063_slice_035 sup=case_013_slice_030 base=0.518 enh=0.000 single=0.000 A5=box ratio=0.97
+155/156 case_063_slice_040 sup=case_046_slice_080 base=0.938 enh=0.557 single=0.101 A5=box ratio=1.01
+156/156 case_063_slice_045 sup=case_026_slice_005 base=0.000 enh=0.000 single=0.000 A5=enhanced ratio=0.25
+DONE 156
