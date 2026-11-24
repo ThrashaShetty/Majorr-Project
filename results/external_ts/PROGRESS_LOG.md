@@ -623,3 +623,11 @@ both protected.
   was replaced by "the AI assistant" in the "close … and browsers" messages and log notes. One line per run log
   changed; no timestamps, numbers or results changed. None of these files is protected or hash-referenced; the
   1,488 protected files still verify.
+
+## 2026-11-24 — history rewritten for neutral wording, force-pushed (user approved)
+
+* Every commit's copies of the affected `results/external_ts` files were rewritten with the same wording-only
+  replacements as the previous entry (`git filter-branch --index-filter`). Authors, committers, dates and messages
+  kept; final tree identical to the previous tip `ebffc3a` (asserted). No commit contains the app's name.
+* `git push --force-with-lease` of both branches: `ebffc3a...d2e533c (forced update)`. Old tip kept as local tag
+  `pre-neutral-rewrite-ebffc3a` (not pushed).
