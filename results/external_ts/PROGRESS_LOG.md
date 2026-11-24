@@ -559,3 +559,27 @@ both protected.
   preservation commit is kept; `main` was reset (mixed, working tree untouched) to `8828775` and the later changes
   re-committed in groups. Old tip kept as local tag `pre-regroup-c465592`. `external-evaluation-results` moved to the
   new `main` tip so the pushed branches share one history. No `DEMO_GUIDE.md` exists (skipped).
+
+## 2026-11-24 — push attempt 2 REFUSED (403, token has no scopes)
+
+* Regrouped history (10 new commits on top of `8828775`, tip `78d01cc`) verified: tree equals the old tip plus
+  `.env.example` and this log; 1,488 protected files OK; 90 `.done` markers; no `.pth`, `.env` or `backups/` tracked.
+* `git push -u origin main` and `git push origin external-evaluation-results` with the user-supplied classic token
+  (passed one-time via `-c credential.helper`, not stored in git config or any file): both **403**,
+  "Permission to ThrashaShetty/Majorr-Project.git denied to ThrashaShetty". GitHub API shows the token
+  authenticates but has **empty `X-OAuth-Scopes`** (push needs `repo`). Nothing was pushed.
+* This entry is uncommitted.
+
+## 2026-11-24 — push attempt 3 REFUSED (403, new token also has no scopes)
+
+* A second user-supplied classic token was used (one-time `-c credential.helper`, not stored). Both pushes: **403**,
+  "Permission to ThrashaShetty/Majorr-Project.git denied to ThrashaShetty". GitHub API: the account has
+  `push`/`admin` on the repo (public), but the token's `X-OAuth-Scopes` is **empty**; push needs `repo`
+  (or `public_repo`). Nothing was pushed. This entry is uncommitted.
+
+## 2026-11-24 — GitHub push succeeded (done by the user)
+
+* `git ls-remote origin`: `main`, `external-evaluation-results` and `HEAD` all at `78d01cc` on
+  https://github.com/ThrashaShetty/Majorr-Project (public). The token pasted in chat now returns 401 (revoked).
+* The three log entries above (secrets check / attempts 2–3) and this one are committed as a normal follow-up commit
+  (no amend, no force push).
