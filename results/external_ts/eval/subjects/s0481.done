@@ -1,0 +1,10 @@
+{
+ "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+ "csv_sha256": "a209e27c5ef573f0991e5e06c700aa73893900184246c182dd59de78bd44cae6",
+ "n_slices": 2,
+ "slice_json_sha256": [
+  "0317a343b97b8ed101947067b3db5bdbe7f3a36520198f423a5d84c225b5be27",
+  "f44405ee66bd2e1b909d964aef9063ed24af6fcabca1f78721c17e1cd606bdbb"
+ ],
+ "subject": "s0481"
+}

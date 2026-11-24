@@ -1,0 +1,206 @@
+{"utc": "20261123T041356Z", "driver": "run_batches", "event": "driver_start", "batches": 9, "subjects": 89, "start_ram_gib": 1.0, "resource_constrained_deviation": true}
+{"utc": "20261123T041356Z", "driver": "run_batches", "event": "sleep_prevention_on", "previous_state": -2147483648, "start_ram_gib": 1.0, "resource_constrained_deviation": true}
+{"utc": "20261123T041357Z", "driver": "run_batches", "event": "batch_start", "batch": 1, "subjects": ["s0011", "s0058", "s0223", "s0250", "s0310", "s0344", "s0357", "s0358", "s0363", "s0407"], "snapshot": "pre_batch_01_20261123T041356Z.sha256", "start_ram_gib": 1.0, "resource_constrained_deviation": true}
+{
+ "optimisation": {
+  "evidence_sha256": "f4c70af9b029480e29f97aadb9536b6b15ad32460b4a2d897981871ea86c0689",
+  "mem_opt_file_sha256": "da820c969c21bb7892fc3c058ad3bbd1f2cc19a5852154f05324fcb2530c4fb0",
+  "active": false,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06"
+ },
+ "preflight": {
+  "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+  "subjects": {
+   "s0011": {
+    "items": 12,
+    "completed_verified": [],
+    "to_run": [
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265
+    ],
+    "done_marker": false
+   },
+   "s0058": {
+    "items": 18,
+    "completed_verified": [],
+    "to_run": [
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0223": {
+    "items": 3,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34
+    ],
+    "done_marker": false
+   },
+   "s0250": {
+    "items": 20,
+    "completed_verified": [],
+    "to_run": [
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0310": {
+    "items": 2,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17
+    ],
+    "done_marker": false
+   },
+   "s0344": {
+    "items": 16,
+    "completed_verified": [],
+    "to_run": [
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250
+    ],
+    "done_marker": false
+   },
+   "s0357": {
+    "items": 8,
+    "completed_verified": [],
+    "to_run": [
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45
+    ],
+    "done_marker": false
+   },
+   "s0358": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     330,
+     335,
+     340,
+     345,
+     350,
+     355,
+     357,
+     360,
+     365,
+     370,
+     374,
+     375,
+     380
+    ],
+    "done_marker": false
+   },
+   "s0363": {
+    "items": 3,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34
+    ],
+    "done_marker": false
+   },
+   "s0407": {
+    "items": 12,
+    "completed_verified": [],
+    "to_run": [
+     10,
+     15,
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45,
+     50,
+     51
+    ],
+    "done_marker": false
+   }
+  }
+ },
+ "start_guard_probe": {
+  "ok": true,
+  "ram_available_gb": 1.111,
+  "disk_free_gb": 11.46
+ },
+ "start_ram_gib": 1.0,
+ "resource_constrained_deviation": true
+}
+{"utc": "20261123T043530Z", "driver": "run_batches", "event": "STOP", "batch": 1, "reason": "resource_stop", "launcher_rc": 3, "start_ram_gib": 1.0, "resource_constrained_deviation": true}
+{"utc": "20261123T043530Z", "driver": "run_batches", "event": "sleep_prevention_released", "result": -2147483647, "start_ram_gib": 1.0, "resource_constrained_deviation": true}

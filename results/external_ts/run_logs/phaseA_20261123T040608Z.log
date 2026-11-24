@@ -1,0 +1,3 @@
+﻿2026-11-23T04:06:08Z  Phase A launcher started (PID 6540). root=C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project DryRun=False
+2026-11-23T04:06:09Z  Resources after wait: RAM available 0.699 GiB | C: free 9.62 GiB | AC plugged False
+2026-11-23T04:06:09Z  FINAL exit code 12 (AC power not connected - plug in the charger and re-launch)

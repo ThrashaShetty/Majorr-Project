@@ -1,0 +1,3 @@
+﻿12
+AC power not connected - plug in the charger and re-launch
+log: C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\external_ts\run_logs\phaseA_20261123T040608Z.log

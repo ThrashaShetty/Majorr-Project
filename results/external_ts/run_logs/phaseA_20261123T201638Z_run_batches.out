@@ -1,0 +1,1075 @@
+{"utc": "20261123T202012Z", "driver": "run_batches", "event": "driver_start", "batches": 9, "subjects": 89, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T202012Z", "driver": "run_batches", "event": "sleep_prevention_on", "previous_state": -2147483648, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T202013Z", "driver": "run_batches", "event": "batch_start", "batch": 1, "subjects": ["s0011", "s0058", "s0223", "s0250", "s0310", "s0344", "s0357", "s0358", "s0363", "s0407"], "snapshot": "pre_batch_01_20261123T202012Z.sha256", "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{
+ "optimisation": {
+  "evidence_sha256": "f4c70af9b029480e29f97aadb9536b6b15ad32460b4a2d897981871ea86c0689",
+  "mem_opt_file_sha256": "da820c969c21bb7892fc3c058ad3bbd1f2cc19a5852154f05324fcb2530c4fb0",
+  "active": false,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06"
+ },
+ "preflight": {
+  "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+  "subjects": {
+   "s0011": {
+    "items": 12,
+    "completed_verified": [
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0058": {
+    "items": 18,
+    "completed_verified": [
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0223": {
+    "items": 3,
+    "completed_verified": [
+     0,
+     17,
+     34
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0250": {
+    "items": 20,
+    "completed_verified": [
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0310": {
+    "items": 2,
+    "completed_verified": [
+     0,
+     17
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0344": {
+    "items": 16,
+    "completed_verified": [
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0357": {
+    "items": 8,
+    "completed_verified": [
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0358": {
+    "items": 13,
+    "completed_verified": [
+     330,
+     335,
+     340,
+     345,
+     350,
+     355,
+     357,
+     360,
+     365,
+     370,
+     374,
+     375,
+     380
+    ],
+    "to_run": [],
+    "done_marker": true
+   },
+   "s0363": {
+    "items": 3,
+    "completed_verified": [
+     0,
+     17,
+     34
+    ],
+    "to_run": [],
+    "done_marker": false
+   },
+   "s0407": {
+    "items": 12,
+    "completed_verified": [],
+    "to_run": [
+     10,
+     15,
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45,
+     50,
+     51
+    ],
+    "done_marker": false
+   }
+  }
+ },
+ "start_guard_probe": {
+  "ok": true,
+  "ram_available_gb": 2.107,
+  "disk_free_gb": 10.87
+ },
+ "start_ram_gib": 1.6,
+ "resource_constrained_deviation": false
+}
+{
+ "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+ "allowed_existing_subjects": [
+  "s0965"
+ ],
+ "other_subjects_with_outputs": [],
+ "snapshot_files_changed": [],
+ "max_abs_metric_deviation": 0.0,
+ "errors": [],
+ "all_passed": true
+}
+s0011 expected 12 present 12 primary 10 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 12, 'config_ok': True, 'csv_rows': 12, 'csv_matches_slices': True}
+s0058 expected 18 present 18 primary 15 sensitivity 4 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 18, 'config_ok': True, 'csv_rows': 18, 'csv_matches_slices': True}
+s0223 expected 3 present 3 primary 0 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 3, 'config_ok': True, 'csv_rows': 3, 'csv_matches_slices': True}
+s0250 expected 20 present 20 primary 16 sensitivity 5 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 20, 'config_ok': True, 'csv_rows': 20, 'csv_matches_slices': True}
+s0310 expected 2 present 2 primary 0 sensitivity 2 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 2, 'config_ok': True, 'csv_rows': 2, 'csv_matches_slices': True}
+s0344 expected 16 present 16 primary 13 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 16, 'config_ok': True, 'csv_rows': 16, 'csv_matches_slices': True}
+s0357 expected 8 present 8 primary 6 sensitivity 2 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 8, 'config_ok': True, 'csv_rows': 8, 'csv_matches_slices': True}
+s0358 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0363 expected 3 present 3 primary 0 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 3, 'config_ok': True, 'csv_rows': 3, 'csv_matches_slices': True}
+s0407 expected 12 present 12 primary 9 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 12, 'config_ok': True, 'csv_rows': 12, 'csv_matches_slices': True}
+{
+ "zip": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\backups\\external_ts\\external_ts_tier1_20261123T202312Z.zip",
+ "zip_sha256": "fc802df65d952ef070b7974a6b2c106e459a2be8ce694432b23b6c23e0919b52",
+ "files": 335,
+ "crc_ok": true,
+ "members_equal_manifest": true,
+ "member_hash_mismatches": [],
+ "manifest_sha256": "54211b2635f741b0fb562b736b07b6ed1c12deb16afed71ce83d60cbaff05d78",
+ "live_changed_since_manifest": [],
+ "ok": true,
+ "info": {
+  "created_utc": "20261123T202312Z",
+  "source": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\medical_sam_project\\results\\external_ts",
+  "files": 335,
+  "bytes": 3102532,
+  "manifest_sha256": "54211b2635f741b0fb562b736b07b6ed1c12deb16afed71ce83d60cbaff05d78",
+  "eval_subjects_done": [
+   "s0011",
+   "s0058",
+   "s0223",
+   "s0250",
+   "s0310",
+   "s0344",
+   "s0357",
+   "s0358",
+   "s0363",
+   "s0407",
+   "s0965"
+  ]
+ }
+}
+{"utc": "20261123T202313Z", "driver": "run_batches", "event": "batch_complete", "batch": 1, "verification": "batch_01_verification_20261123T202012Z.json", "mirrored": null, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T202314Z", "driver": "run_batches", "event": "batch_start", "batch": 2, "subjects": ["s0425", "s0461", "s0477", "s0481", "s0511", "s0513", "s0519", "s0522", "s0582", "s0591"], "snapshot": "pre_batch_02_20261123T202313Z.sha256", "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{
+ "optimisation": {
+  "evidence_sha256": "f4c70af9b029480e29f97aadb9536b6b15ad32460b4a2d897981871ea86c0689",
+  "mem_opt_file_sha256": "da820c969c21bb7892fc3c058ad3bbd1f2cc19a5852154f05324fcb2530c4fb0",
+  "active": true,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06"
+ },
+ "preflight": {
+  "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+  "subjects": {
+   "s0425": {
+    "items": 4,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34,
+     51
+    ],
+    "done_marker": false
+   },
+   "s0461": {
+    "items": 17,
+    "completed_verified": [],
+    "to_run": [
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265
+    ],
+    "done_marker": false
+   },
+   "s0477": {
+    "items": 17,
+    "completed_verified": [],
+    "to_run": [
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255
+    ],
+    "done_marker": false
+   },
+   "s0481": {
+    "items": 2,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17
+    ],
+    "done_marker": false
+   },
+   "s0511": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     75,
+     80,
+     85,
+     90,
+     95,
+     100,
+     102,
+     105,
+     110,
+     115,
+     119,
+     120,
+     125
+    ],
+    "done_marker": false
+   },
+   "s0513": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0519": {
+    "items": 12,
+    "completed_verified": [],
+    "to_run": [
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265
+    ],
+    "done_marker": false
+   },
+   "s0522": {
+    "items": 3,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34
+    ],
+    "done_marker": false
+   },
+   "s0582": {
+    "items": 4,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34,
+     51
+    ],
+    "done_marker": false
+   },
+   "s0591": {
+    "items": 14,
+    "completed_verified": [],
+    "to_run": [
+     170,
+     175,
+     180,
+     185,
+     187,
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221
+    ],
+    "done_marker": false
+   }
+  }
+ },
+ "start_guard_probe": {
+  "ok": true,
+  "ram_available_gb": 1.884,
+  "disk_free_gb": 10.86
+ },
+ "start_ram_gib": 1.6,
+ "resource_constrained_deviation": false
+}
+{
+ "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+ "allowed_existing_subjects": [
+  "s0011",
+  "s0058",
+  "s0223",
+  "s0250",
+  "s0310",
+  "s0344",
+  "s0357",
+  "s0358",
+  "s0363",
+  "s0407",
+  "s0965"
+ ],
+ "other_subjects_with_outputs": [],
+ "snapshot_files_changed": [],
+ "max_abs_metric_deviation": 0.0,
+ "errors": [],
+ "all_passed": true
+}
+s0425 expected 4 present 4 primary 0 sensitivity 4 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 4, 'config_ok': True, 'csv_rows': 4, 'csv_matches_slices': True}
+s0461 expected 17 present 17 primary 14 sensitivity 4 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 17, 'config_ok': True, 'csv_rows': 17, 'csv_matches_slices': True}
+s0477 expected 17 present 17 primary 14 sensitivity 4 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 17, 'config_ok': True, 'csv_rows': 17, 'csv_matches_slices': True}
+s0481 expected 2 present 2 primary 0 sensitivity 2 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 2, 'config_ok': True, 'csv_rows': 2, 'csv_matches_slices': True}
+s0511 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0513 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0519 expected 12 present 12 primary 10 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 12, 'config_ok': True, 'csv_rows': 12, 'csv_matches_slices': True}
+s0522 expected 3 present 3 primary 0 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 3, 'config_ok': True, 'csv_rows': 3, 'csv_matches_slices': True}
+s0582 expected 4 present 4 primary 0 sensitivity 4 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 4, 'config_ok': True, 'csv_rows': 4, 'csv_matches_slices': True}
+s0591 expected 14 present 14 primary 11 sensitivity 4 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 14, 'config_ok': True, 'csv_rows': 14, 'csv_matches_slices': True}
+{
+ "zip": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\backups\\external_ts\\external_ts_tier1_20261123T204712Z.zip",
+ "zip_sha256": "73f31ea7aead406d2d5973143072790cfffdb19a1ad854075ca5a9fcca6b1ec4",
+ "files": 555,
+ "crc_ok": true,
+ "members_equal_manifest": true,
+ "member_hash_mismatches": [],
+ "manifest_sha256": "fc259ee04cb575e1251476c61bce28da19781e8ba412748271bfe995cf0870ff",
+ "live_changed_since_manifest": [],
+ "ok": true,
+ "info": {
+  "created_utc": "20261123T204712Z",
+  "source": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\medical_sam_project\\results\\external_ts",
+  "files": 555,
+  "bytes": 4275335,
+  "manifest_sha256": "fc259ee04cb575e1251476c61bce28da19781e8ba412748271bfe995cf0870ff",
+  "eval_subjects_done": [
+   "s0011",
+   "s0058",
+   "s0223",
+   "s0250",
+   "s0310",
+   "s0344",
+   "s0357",
+   "s0358",
+   "s0363",
+   "s0407",
+   "s0425",
+   "s0461",
+   "s0477",
+   "s0481",
+   "s0511",
+   "s0513",
+   "s0519",
+   "s0522",
+   "s0582",
+   "s0591",
+   "s0965"
+  ]
+ }
+}
+{"utc": "20261123T204714Z", "driver": "run_batches", "event": "batch_complete", "batch": 2, "verification": "batch_02_verification_20261123T202313Z.json", "mirrored": null, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T204716Z", "driver": "run_batches", "event": "batch_start", "batch": 3, "subjects": ["s0649", "s0703", "s0720", "s0726", "s0727", "s0747", "s0762", "s0763", "s0777", "s0811"], "snapshot": "pre_batch_03_20261123T204714Z.sha256", "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{
+ "optimisation": {
+  "evidence_sha256": "f4c70af9b029480e29f97aadb9536b6b15ad32460b4a2d897981871ea86c0689",
+  "mem_opt_file_sha256": "da820c969c21bb7892fc3c058ad3bbd1f2cc19a5852154f05324fcb2530c4fb0",
+  "active": true,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06"
+ },
+ "preflight": {
+  "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+  "subjects": {
+   "s0649": {
+    "items": 9,
+    "completed_verified": [],
+    "to_run": [
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230
+    ],
+    "done_marker": false
+   },
+   "s0703": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0720": {
+    "items": 20,
+    "completed_verified": [],
+    "to_run": [
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280,
+     285,
+     289,
+     290,
+     295
+    ],
+    "done_marker": false
+   },
+   "s0726": {
+    "items": 11,
+    "completed_verified": [],
+    "to_run": [
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245
+    ],
+    "done_marker": false
+   },
+   "s0727": {
+    "items": 11,
+    "completed_verified": [],
+    "to_run": [
+     165,
+     170,
+     175,
+     180,
+     185,
+     187,
+     190,
+     195,
+     200,
+     204,
+     205
+    ],
+    "done_marker": false
+   },
+   "s0747": {
+    "items": 15,
+    "completed_verified": [],
+    "to_run": [
+     10,
+     15,
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45,
+     50,
+     51,
+     55,
+     60,
+     65
+    ],
+    "done_marker": false
+   },
+   "s0762": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280,
+     285,
+     289,
+     290
+    ],
+    "done_marker": false
+   },
+   "s0763": {
+    "items": 16,
+    "completed_verified": [],
+    "to_run": [
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0777": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     160,
+     165,
+     170,
+     175,
+     180,
+     185,
+     187,
+     190,
+     195,
+     200,
+     204,
+     205,
+     210
+    ],
+    "done_marker": false
+   },
+   "s0811": {
+    "items": 4,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34,
+     51
+    ],
+    "done_marker": false
+   }
+  }
+ },
+ "start_guard_probe": {
+  "ok": true,
+  "ram_available_gb": 1.688,
+  "disk_free_gb": 10.84
+ },
+ "start_ram_gib": 1.6,
+ "resource_constrained_deviation": false
+}
+{
+ "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+ "allowed_existing_subjects": [
+  "s0011",
+  "s0058",
+  "s0223",
+  "s0250",
+  "s0310",
+  "s0344",
+  "s0357",
+  "s0358",
+  "s0363",
+  "s0407",
+  "s0425",
+  "s0461",
+  "s0477",
+  "s0481",
+  "s0511",
+  "s0513",
+  "s0519",
+  "s0522",
+  "s0582",
+  "s0591",
+  "s0965"
+ ],
+ "other_subjects_with_outputs": [],
+ "snapshot_files_changed": [],
+ "max_abs_metric_deviation": 0.0,
+ "errors": [],
+ "all_passed": true
+}
+s0649 expected 9 present 9 primary 7 sensitivity 2 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 9, 'config_ok': True, 'csv_rows': 9, 'csv_matches_slices': True}
+s0703 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0720 expected 20 present 20 primary 16 sensitivity 5 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 20, 'config_ok': True, 'csv_rows': 20, 'csv_matches_slices': True}
+s0726 expected 11 present 11 primary 9 sensitivity 2 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 11, 'config_ok': True, 'csv_rows': 11, 'csv_matches_slices': True}
+s0727 expected 11 present 11 primary 9 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 11, 'config_ok': True, 'csv_rows': 11, 'csv_matches_slices': True}
+s0747 expected 15 present 15 primary 12 sensitivity 3 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 15, 'config_ok': True, 'csv_rows': 15, 'csv_matches_slices': True}
+s0762 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0763 expected 16 present 16 primary 13 sensitivity 4 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 16, 'config_ok': True, 'csv_rows': 16, 'csv_matches_slices': True}
+s0777 expected 13 present 13 primary 11 sensitivity 3 overlap 1 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 13, 'config_ok': True, 'csv_rows': 13, 'csv_matches_slices': True}
+s0811 expected 4 present 4 primary 0 sensitivity 4 overlap 0 done {'csv_hash_ok': True, 'slice_hashes_ok': True, 'n_slices': 4, 'config_ok': True, 'csv_rows': 4, 'csv_matches_slices': True}
+{
+ "zip": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\backups\\external_ts\\external_ts_tier1_20261123T211546Z.zip",
+ "zip_sha256": "b8fa07e22b55387743cec48ef33f7d66836b45797aff90838e4363a1185fdf03",
+ "files": 827,
+ "crc_ok": true,
+ "members_equal_manifest": true,
+ "member_hash_mismatches": [],
+ "manifest_sha256": "7dea1d86d820874b9a03c92da6ea8480840cba00b52593b59e060b7c87696e54",
+ "live_changed_since_manifest": [],
+ "ok": true,
+ "info": {
+  "created_utc": "20261123T211546Z",
+  "source": "C:\\Anvith\\FINALYEARPROJECTTHRASHA\\medical_sam_project\\results\\external_ts",
+  "files": 827,
+  "bytes": 5778199,
+  "manifest_sha256": "7dea1d86d820874b9a03c92da6ea8480840cba00b52593b59e060b7c87696e54",
+  "eval_subjects_done": [
+   "s0011",
+   "s0058",
+   "s0223",
+   "s0250",
+   "s0310",
+   "s0344",
+   "s0357",
+   "s0358",
+   "s0363",
+   "s0407",
+   "s0425",
+   "s0461",
+   "s0477",
+   "s0481",
+   "s0511",
+   "s0513",
+   "s0519",
+   "s0522",
+   "s0582",
+   "s0591",
+   "s0649",
+   "s0703",
+   "s0720",
+   "s0726",
+   "s0727",
+   "s0747",
+   "s0762",
+   "s0763",
+   "s0777",
+   "s0811",
+   "s0965"
+  ]
+ }
+}
+{"utc": "20261123T211549Z", "driver": "run_batches", "event": "batch_complete", "batch": 3, "verification": "batch_03_verification_20261123T204714Z.json", "mirrored": null, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T211552Z", "driver": "run_batches", "event": "batch_start", "batch": 4, "subjects": ["s0812", "s0859", "s0866", "s0878", "s0903", "s0908", "s0912", "s0914", "s0915", "s0928"], "snapshot": "pre_batch_04_20261123T211549Z.sha256", "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{
+ "optimisation": {
+  "evidence_sha256": "f4c70af9b029480e29f97aadb9536b6b15ad32460b4a2d897981871ea86c0689",
+  "mem_opt_file_sha256": "da820c969c21bb7892fc3c058ad3bbd1f2cc19a5852154f05324fcb2530c4fb0",
+  "active": true,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06"
+ },
+ "preflight": {
+  "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+  "subjects": {
+   "s0812": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     185,
+     187,
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230
+    ],
+    "done_marker": false
+   },
+   "s0859": {
+    "items": 22,
+    "completed_verified": [],
+    "to_run": [
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0866": {
+    "items": 4,
+    "completed_verified": [],
+    "to_run": [
+     0,
+     17,
+     34,
+     51
+    ],
+    "done_marker": false
+   },
+   "s0878": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260
+    ],
+    "done_marker": false
+   },
+   "s0903": {
+    "items": 11,
+    "completed_verified": [],
+    "to_run": [
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272
+    ],
+    "done_marker": false
+   },
+   "s0908": {
+    "items": 13,
+    "completed_verified": [],
+    "to_run": [
+     5,
+     10,
+     15,
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45,
+     50,
+     51
+    ],
+    "done_marker": false
+   },
+   "s0912": {
+    "items": 21,
+    "completed_verified": [],
+    "to_run": [
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255,
+     260,
+     265,
+     270,
+     272,
+     275,
+     280
+    ],
+    "done_marker": false
+   },
+   "s0914": {
+    "items": 15,
+    "completed_verified": [],
+    "to_run": [
+     10,
+     15,
+     17,
+     20,
+     25,
+     30,
+     34,
+     35,
+     40,
+     45,
+     50,
+     51,
+     55,
+     60,
+     65
+    ],
+    "done_marker": false
+   },
+   "s0915": {
+    "items": 16,
+    "completed_verified": [],
+    "to_run": [
+     185,
+     187,
+     190,
+     195,
+     200,
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240
+    ],
+    "done_marker": false
+   },
+   "s0928": {
+    "items": 14,
+    "completed_verified": [],
+    "to_run": [
+     204,
+     205,
+     210,
+     215,
+     220,
+     221,
+     225,
+     230,
+     235,
+     238,
+     240,
+     245,
+     250,
+     255
+    ],
+    "done_marker": false
+   }
+  }
+ },
+ "start_guard_probe": {
+  "ok": false,
+  "reason": "available RAM 1.539 GB < limit 1.600 GB"
+ },
+ "start_ram_gib": 1.6,
+ "resource_constrained_deviation": false
+}
+{"utc": "20261123T211556Z", "driver": "run_batches", "event": "STOP", "batch": 4, "reason": "resource_stop", "launcher_rc": 3, "start_ram_gib": 1.6, "resource_constrained_deviation": false}
+{"utc": "20261123T211556Z", "driver": "run_batches", "event": "sleep_prevention_released", "result": -2147483647, "start_ram_gib": 1.6, "resource_constrained_deviation": false}

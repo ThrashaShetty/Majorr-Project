@@ -1,0 +1,3 @@
+﻿10
+both pre-flights failed the RAM guard: RAM available 1.168 GiB (needs >= 1.0)
+log: C:\Anvith\FINALYEARPROJECTTHRASHA\medical_sam_project\results\external_ts\run_logs\phaseA_20261123T040610Z.log

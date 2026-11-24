@@ -1,0 +1,97 @@
+{
+ "checkpoint": {
+  "path": "checkpoints/sam_vit_b_01ec64.pth",
+  "sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
+ },
+ "code_sha256": {
+  "results/external_ts/scripts/eval_external_ts.py": "956ba4c5714d7044c60c534621ae35d64f46cc38203ea0813ffbad8663ac3de1",
+  "results/external_ts/scripts/ts_common.py": "c9c9bab001c2333fcb9dbba24fa7500eec679e8447c0392b68e2dc9f2222574b",
+  "results/external_ts/scripts/ts_resources.py": "8a5658035e32bbeba691908cb56ada38ceb3c4f0c407a0061e37a832c2afa637",
+  "results/v3/adaptive/evaluation_config.json": "4f67998796bc6a3b7f6e38daa1678da1e5ad54ac0ef60ed3691af62b2b905717",
+  "results/v3/scripts/holdout.py": "fd35184e3084f32eebae18e92a47a2f1764bb191af05b7231e31674beeafe93f",
+  "run_evaluation.py": "562dae97e736347050266a6c903a96e98d285d334a832a44adfd9e1543ed268c",
+  "src/__init__.py": "15c9fc85178c9028b190fbd3bc3381ff7014a139c440fe8c00285080e8021d57",
+  "src/baseline.py": "dd33869b7031a1be1fb72d538b7997f67e78d893b38d416f1b5065aeb46dacf7",
+  "src/fob/__init__.py": "26e206681ea5bfc089a344d5f7dd12e8d2dfe9697c61a1e392b4a3c6682e58f0",
+  "src/fob/adaptive.py": "ce209939c334033d9b8d23cdf13bb4e228df39a1c830ba30c56882e9d7c6e58d",
+  "src/fob/bcm.py": "d6f69a50bb6aa17bedb2955c2a4ea11b61ef08f65b4756d50b51fde1e531aedf",
+  "src/fob/bppc.py": "db96245d18ec3e78264186a97db8d5813e795b06a8afee709b6ed0f07ba41d23",
+  "src/fob/fob_pipeline.py": "5254b32017222ce19d11eefc611ae16c9bca7a39eee32d4a9491dfa6f5ec45ca",
+  "src/fob/spr.py": "31b423f94ad7d8bf65dc18994a603ffdc90de145f4031969b0fff78b730a6252",
+  "src/metrics.py": "8640270c304ddf5b85f994eff61bbc3b4d40ddd96e9cd872425e7a4493ef3fdd",
+  "src/preprocessing.py": "8e454dbed6ba8c5a13199c13a16c9752877186ef388a7342e0a6a6cf5aeb3a8e"
+ },
+ "config_version": 1,
+ "device": "cpu",
+ "full_qc_sha256": "56629d880320e6b6196f77192f46a30b4203f4cffb77bc74cea63129d35d8f22",
+ "manifest_sha256": "b6de738e9f1e168d6e7f5e3c53997efb6b5412bb948a69261d1d0548e565ca26",
+ "method_settings": {
+  "a5": {
+   "hi": 2.0,
+   "lo": 0.5,
+   "rule": "keep baseline if A5_LO <= baseline_mask_px / support_mask_px <= A5_HI else enhanced_v2",
+   "tuned": false
+  },
+  "baseline": "src.baseline.BaselineSegmentor(engine) - support-mask box, multimask, best predicted IoU",
+  "enhanced_v2": {
+   "class": "src.fob.fob_pipeline.FoBPipeline",
+   "mode": "enhanced",
+   "seed": 42,
+   "uncertainty": "none",
+   "use_adaptive": true
+  },
+  "per_query_order": "invalidate -> baseline -> enhanced_v2 -> single_mask decode (as holdout.py)",
+  "single_mask": "Enhanced v2 prompts, predictor.predict(multimask_output=False), best mask"
+ },
+ "methods": [
+  "baseline",
+  "enhanced_v2",
+  "a5",
+  "single_mask"
+ ],
+ "query_preprocessing": "frozen TS preprocessing (manifest + full QC); images/masks loaded with src.preprocessing.load_image_rgb/load_mask_binary",
+ "seed": 42,
+ "support_pool": {
+  "files_digest": "b4482f9c51c365de6f0da2afb11b3253cefb499fe628acc6b4b176f7f007bb89",
+  "n_patients": 33,
+  "n_slices": 156,
+  "pairing": "nearest 64x64 thumbnail cosine (run_evaluation._thumb), argmax over all 156",
+  "patients": [
+   "case_002",
+   "case_008",
+   "case_009",
+   "case_010",
+   "case_012",
+   "case_013",
+   "case_016",
+   "case_017",
+   "case_018",
+   "case_019",
+   "case_022",
+   "case_024",
+   "case_025",
+   "case_026",
+   "case_027",
+   "case_028",
+   "case_029",
+   "case_031",
+   "case_032",
+   "case_033",
+   "case_038",
+   "case_040",
+   "case_041",
+   "case_044",
+   "case_045",
+   "case_046",
+   "case_047",
+   "case_049",
+   "case_053",
+   "case_056",
+   "case_060",
+   "case_061",
+   "case_063"
+  ],
+  "source": "data/support_list.txt"
+ },
+ "worklist_sha256": "726bb4ee1c23154e6e92910ab6b059a8a72ae877991b8f332b0d75975c668041"
+}
