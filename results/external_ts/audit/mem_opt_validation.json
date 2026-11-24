@@ -1,0 +1,141 @@
+{
+ "A": [
+  {
+   "arrays_identical": {
+    "baseline": true,
+    "box": true,
+    "enhanced": true,
+    "gt": true,
+    "labels": true,
+    "points": true,
+    "single": true
+   },
+   "differing_pixels": {
+    "baseline": 0,
+    "enhanced": 0,
+    "single": 0
+   },
+   "row_fields_differing": {},
+   "seconds": 19.95,
+   "timing_new_ms": {
+    "a5_ms": 9990.8840999924,
+    "baseline_ms": 9990.8840999924,
+    "enhanced_ms": 19610.11179999332,
+    "single_decode_ms": 88.22830000281101,
+    "single_ms": 19610.11179999332
+   },
+   "timing_old_ms": {
+    "a5_ms": 17352.396699992823,
+    "baseline_ms": 17352.396699992823,
+    "enhanced_ms": 26623.013799988257,
+    "single_decode_ms": 105.25459999917075,
+    "single_ms": 26623.013799988257
+   },
+   "z": 204
+  },
+  {
+   "arrays_identical": {
+    "baseline": true,
+    "box": true,
+    "enhanced": true,
+    "gt": true,
+    "labels": true,
+    "points": true,
+    "single": true
+   },
+   "differing_pixels": {
+    "baseline": 0,
+    "enhanced": 0,
+    "single": 0
+   },
+   "row_fields_differing": {},
+   "seconds": 18.57,
+   "timing_new_ms": {
+    "a5_ms": 9203.076100006001,
+    "baseline_ms": 9203.076100006001,
+    "enhanced_ms": 18311.63579999702,
+    "single_decode_ms": 96.59780000220053,
+    "single_ms": 18311.63579999702
+   },
+   "timing_old_ms": {
+    "a5_ms": 9007.940900002723,
+    "baseline_ms": 9007.940900002723,
+    "enhanced_ms": 17689.870399997744,
+    "single_decode_ms": 118.6290999976336,
+    "single_ms": 17689.870399997744
+   },
+   "z": 205
+  }
+ ],
+ "A_all_identical": true,
+ "finished_utc": "2026-11-22T19:48:33+00:00",
+ "guard_checks": [
+  {
+   "disk_free_bytes": 15911940096,
+   "disk_path": "C:\\",
+   "min_disk_bytes": 2147483648,
+   "min_ram_bytes": 1717986918,
+   "ok": true,
+   "ram_available_bytes": 2121474048,
+   "stage": "validation: before model load",
+   "stop_reasons": [],
+   "utc": "2026-11-22T19:47:39+00:00"
+  },
+  {
+   "disk_free_bytes": 15911866368,
+   "disk_path": "C:\\",
+   "min_disk_bytes": 2147483648,
+   "min_ram_bytes": 322122547,
+   "ok": true,
+   "ram_available_bytes": 1193582592,
+   "stage": "validation A before z=204",
+   "stop_reasons": [],
+   "utc": "2026-11-22T19:47:54+00:00"
+  },
+  {
+   "disk_free_bytes": 15911866368,
+   "disk_path": "C:\\",
+   "min_disk_bytes": 2147483648,
+   "min_ram_bytes": 322122547,
+   "ok": true,
+   "ram_available_bytes": 1463496704,
+   "stage": "validation A before z=205",
+   "stop_reasons": [],
+   "utc": "2026-11-22T19:48:14+00:00"
+  }
+ ],
+ "guard_start": {
+  "disk_free_bytes": 15911940096,
+  "disk_path": "C:\\",
+  "min_disk_bytes": 2147483648,
+  "min_ram_bytes": 1717986918,
+  "ok": true,
+  "ram_available_bytes": 2121474048,
+  "stage": "validation: before model load",
+  "stop_reasons": [],
+  "utc": "2026-11-22T19:47:39+00:00"
+ },
+ "mem_opt": {
+  "active": true,
+  "chunk_rows": 512,
+  "min_attn_bytes": 134217728,
+  "patched_forward_sha256": "0635556995e730abf2b7cafa09bbf64871566dacbf4bd63bad1f28d832a93b06",
+  "upstream_add_decomposed_rel_pos_sha256": "ed6b3de2008c167699cc0e838aff9445419c168f3f076b6e6458f46ccf63a58e",
+  "upstream_attention_forward_sha256": "9fbbc40563c6aa1b72999c5c9f1942943eb23aea742dadf81391a4445a065a24"
+ },
+ "memory": {
+  "phase_peak_rss_bytes": {
+   "A patched z=204": 1543364608,
+   "A patched z=205": 1496883200,
+   "import+load (patched)": 1110138880,
+   "init": 291057664
+  },
+  "process_peak_pagefile_bytes": 2075168768,
+  "process_peak_working_set_bytes": 1547558912
+ },
+ "reference_slices": [
+  204,
+  205
+ ],
+ "started_utc": "2026-11-22T19:47:39+00:00"
+}

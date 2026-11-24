@@ -1,0 +1,93 @@
+{
+ "all_passed": false,
+ "checks": {
+  "A_support_pool": {
+   "dev_disjoint": true,
+   "dev_equals_v3_excluded": true,
+   "dev_patients": [
+    "case_003",
+    "case_006",
+    "case_014",
+    "case_020",
+    "case_021",
+    "case_052",
+    "case_059",
+    "case_062"
+   ],
+   "distinct_supports_used": 112,
+   "equals_manifest": true,
+   "equals_run_config": true,
+   "equals_split_summary": true,
+   "equals_v3_per_patient": true,
+   "n_patients": 33,
+   "n_slices": 156,
+   "supports_used_from_patients": 30,
+   "worklist_supports_subset_of_pool": true
+  },
+  "B_pairing": {
+   "near_ties_within_1e-7": 0,
+   "v3_pairings_reproduced": "156/156",
+   "worklist_pairings_reproduced": "1078/1078"
+  },
+  "C_cohorts": {
+   "boundary_step5_only_slices_excluded": 161,
+   "boundary_subjects_in_primary": [],
+   "duplicate_items": 0,
+   "excluded_disjoint_from_worklist": true,
+   "overlap": 48,
+   "primary_slices": 826,
+   "primary_subjects": 74,
+   "s1358_in_worklist": false,
+   "sensitivity_evaluable_subjects": 90,
+   "sensitivity_slices": 300,
+   "union": 1078,
+   "worklist_equals_union": true,
+   "worklist_flags_correct": true,
+   "worklist_items": 1078
+  },
+  "D_method_logic_diff_lines": [
+   "-row = dict(query_image=qi.name, patient=f\"case_{pid(qi):03d}\", support_image=si.name, support_patient=f\"case_{pid(si):03d}\",",
+   "-support_px=support_px, gt_px=int((gt > 0).sum()), box_px=box_px, box_area_vs_support=ratio,",
+   "+row = dict(support_px=support_px, gt_px=int((gt > 0).sum()), box_px=box_px, box_area_vs_support=ratio,",
+   "-for m in METRIC_KEYS:",
+   "+for m in metric_keys:",
+   "+arrays = dict(gt=gt > 0, baseline=rb[\"mask\"], enhanced=re_[\"mask\"], single=m_single,",
+   "+box=box, points=np.array(c[\"points_xy\"]), labels=np.array(c[\"point_labels\"]))",
+   "+return row, arrays"
+  ],
+  "D_v3_holdout_sha256": "fd35184e3084f32eebae18e92a47a2f1764bb191af05b7231e31674beeafe93f",
+  "E_config": {
+   "a5_bounds": [
+    0.5,
+    2.0
+   ],
+   "a5_matches_v3_text": true,
+   "adaptive_points_equals_v3": true,
+   "checkpoint_path_equals_v3": true,
+   "checkpoint_sha256_matches_file": true,
+   "code_hashes_unchanged_since_freeze": true,
+   "device_equals_v3": true,
+   "enhanced_v3_text": "production src/fob/fob_pipeline.py (v2, multimask_output=True)",
+   "full_qc_sha_matches": true,
+   "manifest_sha_matches": true,
+   "seed_equals_v3": true,
+   "single_mask_v3_text": "identical Enhanced v2 prompts, SamPredictor.predict(multimask_output=False)",
+   "worklist_sha_matches": true
+  },
+  "F_guard_real_reading": {
+   "disk_free_bytes": 6499479552,
+   "ok": false,
+   "ram_available_bytes": 855781376,
+   "stop_reasons": [
+    "available RAM 0.797 GB < limit 1.600 GB"
+   ]
+  }
+ },
+ "differences_from_v3": [
+  "queries are TS slices (frozen cohorts) instead of the 33 MSD held-out patients",
+  "supports: all 156 v3 support slices; no leave-one-patient-out mask (TS and MSD share no patients)",
+  "slices on both grids evaluated once and tagged in_primary/in_sensitivity (results are order-independent)",
+  "output rows add subject/z/cohort flags/support_similarity; masks npz stored content-addressed",
+  "infrastructure only: hashing, resume, write-once outputs, resource guard, approval flags"
+ ]
+}

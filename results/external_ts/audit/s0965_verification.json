@@ -1,0 +1,350 @@
+{
+ "all_passed": true,
+ "config_sha256": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca",
+ "errors": [],
+ "max_abs_metric_deviation": 0.0,
+ "other_subjects_with_outputs": [],
+ "snapshot_files_changed": [],
+ "subjects": {
+  "s0965": {
+   "done_marker": {
+    "config_ok": true,
+    "csv_hash_ok": true,
+    "csv_matches_slices": true,
+    "csv_rows": 16,
+    "n_slices": 16,
+    "slice_hashes_ok": true
+   },
+   "expected_slices": [
+    204,
+    205,
+    210,
+    215,
+    220,
+    221,
+    225,
+    230,
+    235,
+    238,
+    240,
+    245,
+    250,
+    255,
+    260,
+    265
+   ],
+   "overlap": 1,
+   "present_slices": [
+    204,
+    205,
+    210,
+    215,
+    220,
+    221,
+    225,
+    230,
+    235,
+    238,
+    240,
+    245,
+    250,
+    255,
+    260,
+    265
+   ],
+   "primary": 13,
+   "sensitivity": 4,
+   "slices": [
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.6,
+      "baseline": 0.6,
+      "enhanced": 0.4113,
+      "single": 0.3451
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1162,
+      "enhanced": 1729,
+      "single": 2156
+     },
+     "ratio": 0.658,
+     "z": 204
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.2859,
+      "baseline": 0.2859,
+      "enhanced": 0.2007,
+      "single": 0.2959
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1691,
+      "enhanced": 6879,
+      "single": 3631
+     },
+     "ratio": 0.7549,
+     "z": 205
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.6999,
+      "baseline": 0.6999,
+      "enhanced": 0.5552,
+      "single": 0.5799
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1557,
+      "enhanced": 4337,
+      "single": 3662
+     },
+     "ratio": 0.6951,
+     "z": 210
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.8598,
+      "baseline": 0.8598,
+      "enhanced": 0.8656,
+      "single": 0.7683
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1959,
+      "enhanced": 2060,
+      "single": 2459
+     },
+     "ratio": 0.8746,
+     "z": 215
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.8721,
+      "baseline": 0.8721,
+      "enhanced": 0.0142,
+      "single": 0.2336
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 2206,
+      "enhanced": 21682,
+      "single": 3549
+     },
+     "ratio": 0.9848,
+     "z": 220
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.8901,
+      "baseline": 0.8901,
+      "enhanced": 0.6023,
+      "single": 0.5902
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 2309,
+      "enhanced": 3078,
+      "single": 2507
+     },
+     "ratio": 1.0308,
+     "z": 221
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.7414,
+      "baseline": 0.7414,
+      "enhanced": 0.0438,
+      "single": 0.0164
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 2331,
+      "enhanced": 10696,
+      "single": 5014
+     },
+     "ratio": 1.0406,
+     "z": 225
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.5206,
+      "baseline": 0.5206,
+      "enhanced": 0.004,
+      "single": 0.0119
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1572,
+      "enhanced": 2582,
+      "single": 2136
+     },
+     "ratio": 0.7018,
+     "z": 230
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.4446,
+      "baseline": 0.4446,
+      "enhanced": 0.1737,
+      "single": 0.03
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1459,
+      "enhanced": 25934,
+      "single": 1625
+     },
+     "ratio": 0.9548,
+     "z": 235
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.5258,
+      "baseline": 0.5258,
+      "enhanced": 0.0,
+      "single": 0.0035
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1770,
+      "enhanced": 1289,
+      "single": 2166
+     },
+     "ratio": 1.1584,
+     "z": 238
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.4932,
+      "baseline": 0.4932,
+      "enhanced": 0.0,
+      "single": 0.0102
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1785,
+      "enhanced": 2296,
+      "single": 5505
+     },
+     "ratio": 1.1682,
+     "z": 240
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.5991,
+      "baseline": 0.5991,
+      "enhanced": 0.2025,
+      "single": 0.293
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 9436,
+      "enhanced": 36217,
+      "single": 21500
+     },
+     "ratio": 1.3813,
+     "z": 245
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.4155,
+      "baseline": 0.4155,
+      "enhanced": 0.2194,
+      "single": 0.1669
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 14424,
+      "enhanced": 28634,
+      "single": 16621
+     },
+     "ratio": 1.3728,
+     "z": 250
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.3336,
+      "baseline": 0.3336,
+      "enhanced": 0.2094,
+      "single": 0.3791
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 14048,
+      "enhanced": 23940,
+      "single": 11065
+     },
+     "ratio": 1.337,
+     "z": 255
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.5558,
+      "baseline": 0.5558,
+      "enhanced": 0.2303,
+      "single": 0.1927
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 781,
+      "enhanced": 11781,
+      "single": 7052
+     },
+     "ratio": 0.5111,
+     "z": 260
+    },
+    {
+     "a5_choice": "box",
+     "dice": {
+      "a5": 0.0,
+      "baseline": 0.0,
+      "enhanced": 0.0026,
+      "single": 0.0245
+     },
+     "errors": [],
+     "ok": true,
+     "pred_px": {
+      "baseline": 1809,
+      "enhanced": 5222,
+      "single": 7955
+     },
+     "ratio": 1.0243,
+     "z": 265
+    }
+   ],
+   "unreferenced_npz": []
+  }
+ }
+}

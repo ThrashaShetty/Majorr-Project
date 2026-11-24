@@ -1,0 +1,125 @@
+{
+ "protected_files": {
+  "ok": true,
+  "detail": {
+   "n": 1488,
+   "mismatched": []
+  }
+ },
+ "run_config_sha": {
+  "ok": true,
+  "detail": "3933ca8c48374cc9fa64bb137b1bed79b5c8551f92a267bf1adc98678dc64cca"
+ },
+ "code_hashes": {
+  "ok": true,
+  "detail": {
+   "n": 16,
+   "mismatched": []
+  }
+ },
+ "worklist_sha": {
+  "ok": true,
+  "detail": "726bb4ee1c23154e6e92910ab6b059a8a72ae877991b8f332b0d75975c668041"
+ },
+ "manifest_sha": {
+  "ok": true,
+  "detail": "b6de738e9f1e168d6e7f5e3c53997efb6b5412bb948a69261d1d0548e565ca26"
+ },
+ "full_qc_sha": {
+  "ok": true,
+  "detail": [
+   "results\\external_ts\\qc\\full_qc.json"
+  ]
+ },
+ "checkpoint_sha": {
+  "ok": true,
+  "detail": "checkpoints/sam_vit_b_01ec64.pth"
+ },
+ "sap_sha": {
+  "ok": true,
+  "detail": null
+ },
+ "amendment01_sha": {
+  "ok": true,
+  "detail": null
+ },
+ "all_subjects_done": {
+  "ok": true,
+  "detail": {
+   "worklist": 90,
+   "done": 90,
+   "items": 1078
+  }
+ },
+ "final_verification": {
+  "ok": true,
+  "detail": {
+   "max_dev": 0.0
+  }
+ },
+ "batch_verifications": {
+  "ok": true,
+  "detail": {
+   "n": 9,
+   "failed": []
+  }
+ },
+ "run_history_readable": {
+  "ok": true,
+  "detail": {
+   "entries": 272,
+   "deviation_tagged": 180,
+   "last_event": "sleep_prevention_released"
+  }
+ },
+ "analysis_sha": {
+  "ok": true,
+  "detail": "762d22a74081192f8f16f1b9015425f9c889b28b51f7df999e5028dc6ec9e0b4"
+ },
+ "analysis_inputs_unchanged": {
+  "ok": true,
+  "detail": []
+ },
+ "analysis_n_matches_sap": {
+  "ok": true,
+  "detail": {
+   "primary": [
+    826,
+    74
+   ],
+   "sensitivity": [
+    300,
+    90
+   ]
+  }
+ },
+ "figures_unchanged": {
+  "ok": true,
+  "detail": []
+ },
+ "backup_results_zip": {
+  "ok": true,
+  "detail": "external_ts_tier1_20261124T052059Z.zip"
+ },
+ "backup_docs_zip": {
+  "ok": true,
+  "detail": "docs_20261124T053606Z.zip"
+ },
+ "docs_changed_since_docs_backup": [
+  "docs/FINAL_REPORT_DRAFT.md"
+ ],
+ "docs_pending_markers": {
+  "ARCHITECTURE_DIAGRAM.md": 1,
+  "EXPERIMENTAL_SETUP.md": 1,
+  "EXPLORATORY_FEATURES.md": 7,
+  "FINAL_REPORT_DRAFT.md": 6,
+  "FUTURE_WORK.md": 1,
+  "LIMITATIONS.md": 1,
+  "OBJECTIVES_STATUS.md": 3,
+  "PROJECT_OVERVIEW.md": 1,
+  "README.md": 1,
+  "SLIDES_OUTLINE.md": 5,
+  "VIVA_QA.md": 1
+ },
+ "FAILED": []
+}
