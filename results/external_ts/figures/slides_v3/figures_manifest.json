@@ -1,0 +1,18 @@
+{
+ "inputs_sha256": {
+  "results/v3/raw_holdout_rows.csv": "969da7b4e9b41828a95a426148c0797767298e057d9cea788c701db1fd6eca53",
+  "results/v3/adaptive/summary.json": "aca9e41c0491c5d522def742937f16476c6d33cca48efaa2ba39e5c23c28d8db"
+ },
+ "script_sha256": "d600cff806102a8dcd7000f1de05fc4681f8f75c3058f95c616344928b4c6f97",
+ "outputs_sha256": {
+  "fig5_v3_holdout_dice_box.png": "0169138afc80416a2085fe4340b1bacace657d50962d75db9bc7560fcced84e6"
+ },
+ "patient_means": {
+  "baseline": 0.4944900780012755,
+  "enhanced": 0.32901553837054537,
+  "a5": 0.5182437985720088,
+  "single": 0.3070063525958987
+ },
+ "n_patients": 33,
+ "n_slices": 156
+}

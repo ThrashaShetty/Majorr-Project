@@ -1,0 +1,54 @@
+{
+ "source_analysis": "results\\external_ts\\analysis\\phaseB_20261124T052029Z",
+ "inputs_sha256": {
+  "analysis.json": "762d22a74081192f8f16f1b9015425f9c889b28b51f7df999e5028dc6ec9e0b4",
+  "raw_rows_primary.csv": "9bec7a4a20ad23927df52174738659772d7565a91ef81d9ece998c974057ff87",
+  "raw_rows_sensitivity.csv": "0de084af811695537af95c464ef8abe8488af1c77ace019400ad5464b5a32c72"
+ },
+ "script_sha256": "b8313c7fc11f585e2694f987e59a590c7193c7d68783b4b9254c1caab5edfecd",
+ "outputs_sha256": {
+  "fig1_external_primary_dice_box.png": "b86ab22bce8374e81bca9fe31abca90742e9ef66c4e13ff64f78c80103228b51",
+  "fig2_external_sensitivity_dice_box.png": "b9962c2d721ae4725290fa64744e25c171a5c36db2b3b23ca2b24c944537f287",
+  "fig3_external_primary_paired_diff.png": "c22d28cc80bd6b10c1d405fcae64a441f6f01f7334e54c28c8de9e92043fcf8b",
+  "fig4_external_sensitivity_paired_diff.png": "a29e65bc423014c2eebcf27228cfb9bb9f1ff3361438e6aa62386bf605c0241c"
+ },
+ "settings": {
+  "dpi": 300,
+  "box_ylim": [
+   0,
+   1
+  ],
+  "box_fliers": "not drawn separately; every patient plotted as a dot",
+  "jitter_seed": 0,
+  "palette": {
+   "Baseline": "#2a78d6",
+   "Enhanced v2": "#eb6834",
+   "A5": "#1baf7a",
+   "Single-mask": "#eda100"
+  }
+ },
+ "cohorts": {
+  "primary": {
+   "n_patients": 74,
+   "n_slices": 826,
+   "y_limit": 0.6,
+   "recomputed_patient_mean_diff": {
+    "H1": -0.0018959046293851567,
+    "H2": 0.1613188684633135,
+    "H3": -0.16321477309269866,
+    "H4": -0.0004995642350388589
+   }
+  },
+  "sensitivity": {
+   "n_patients": 90,
+   "n_slices": 300,
+   "y_limit": 0.7,
+   "recomputed_patient_mean_diff": {
+    "H1": 0.010145139119587261,
+    "H2": 0.19272319132436028,
+    "H3": -0.18257805220477305,
+    "H4": -0.0010586374907084295
+   }
+  }
+ }
+}
