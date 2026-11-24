@@ -1,0 +1,3544 @@
+{
+ "all_passed": true,
+ "errors": [],
+ "manifest_sha256": "b6de738e9f1e168d6e7f5e3c53997efb6b5412bb948a69261d1d0548e565ca26",
+ "subjects": [
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.31487,
+    "scaled_percentiles": {
+     "0.1": -1032.0,
+     "1": -1024.0,
+     "25": -1005.0,
+     "5": -1024.0,
+     "50": -961.0,
+     "75": -99.0,
+     "95": 89.0,
+     "99": 325.0,
+     "99.9": 1348.0
+    },
+    "stored_max": 3710.0,
+    "stored_min": -1550.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    74.0,
+    90.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0011"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.55279,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -988.0,
+     "5": -1024.0,
+     "50": -134.0,
+     "75": -70.0,
+     "95": 112.0,
+     "99": 378.0,
+     "99.9": 1246.0
+    },
+    "stored_max": 3523.0,
+    "stored_min": -1433.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    59.0,
+    81.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 15,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 18,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0058"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -999.0,
+    "frac_in_window": 0.35088,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -994.0,
+     "5": -1017.0,
+     "50": -887.0,
+     "75": -71.0,
+     "95": 114.0,
+     "99": 350.0,
+     "99.9": 834.0
+    },
+    "stored_max": 3269.0,
+    "stored_min": -1108.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    31.0,
+    94.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct thorax-neck",
+   "subject": "s0223"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.37279,
+    "scaled_percentiles": {
+     "0.1": -1059.0,
+     "1": -1024.0,
+     "25": -970.0,
+     "5": -1024.0,
+     "50": -899.0,
+     "75": -53.0,
+     "95": 144.0,
+     "99": 339.0,
+     "99.9": 940.0
+    },
+    "stored_max": 2785.0,
+    "stored_min": -1296.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[280]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -79.5,
+    107.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 16,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 20,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0250"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -999.0,
+    "frac_in_window": 0.2966,
+    "scaled_percentiles": {
+     "0.1": -1020.0,
+     "1": -1015.0,
+     "25": -997.0,
+     "5": -1009.0,
+     "50": -935.0,
+     "75": -71.0,
+     "95": 114.0,
+     "99": 468.0,
+     "99.9": 976.0
+    },
+    "stored_max": 3326.0,
+    "stored_min": -1040.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    28.0,
+    76.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 2,
+   "processed_step5": 6,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 7,
+   "study_type": "ct thorax-neck",
+   "subject": "s0310"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.30432,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -1003.0,
+     "5": -1023.0,
+     "50": -955.0,
+     "75": -73.0,
+     "95": 88.0,
+     "99": 296.0,
+     "99.9": 846.0
+    },
+    "stored_max": 3254.0,
+    "stored_min": -1066.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    23.0,
+    85.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0344"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.37525,
+    "scaled_percentiles": {
+     "0.1": -1023.0,
+     "1": -1016.0,
+     "25": -992.0,
+     "5": -1008.0,
+     "50": -851.0,
+     "75": -37.0,
+     "95": 115.0,
+     "99": 398.0,
+     "99.9": 984.0
+    },
+    "stored_max": 3219.0,
+    "stored_min": -1060.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    73.0,
+    87.5
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 6,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 8,
+   "study_type": "ct thorax-neck",
+   "subject": "s0357"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.39995,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1023.0,
+     "25": -992.0,
+     "5": -1011.0,
+     "50": -915.0,
+     "75": -89.0,
+     "95": 54.0,
+     "99": 270.0,
+     "99.9": 1300.0
+    },
+    "stored_max": 3728.0,
+    "stored_min": -1506.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    36.0,
+    50.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct pelvis",
+   "subject": "s0358"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.32565,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1020.0,
+     "25": -990.0,
+     "5": -1011.0,
+     "50": -896.0,
+     "75": -73.0,
+     "95": 132.0,
+     "99": 455.0,
+     "99.9": 978.0
+    },
+    "stored_max": 3308.0,
+    "stored_min": -1108.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    41.0,
+    50.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct thorax",
+   "subject": "s0363"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -966.0,
+    "frac_in_window": 0.41921,
+    "scaled_percentiles": {
+     "0.1": -1052.0,
+     "1": -1030.0,
+     "25": -921.0,
+     "5": -1008.0,
+     "50": -344.0,
+     "75": 24.0,
+     "95": 274.0,
+     "99": 603.0,
+     "99.9": 1313.0
+    },
+    "stored_max": 3446.0,
+    "stored_min": -1207.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    88.0,
+    127.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct thorax-neck",
+   "subject": "s0407"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.50624,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -963.0,
+     "5": -1024.0,
+     "50": -127.0,
+     "75": 7.0,
+     "95": 121.0,
+     "99": 365.0,
+     "99.9": 793.0
+    },
+    "stored_max": 3215.0,
+    "stored_min": -1242.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    33.5,
+    60.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax-neck",
+   "subject": "s0425"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.29256,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -1000.0,
+     "5": -1018.0,
+     "50": -957.0,
+     "75": -69.0,
+     "95": 123.0,
+     "99": 461.0,
+     "99.9": 1211.0
+    },
+    "stored_max": 3046.0,
+    "stored_min": -1061.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    70.5,
+    110.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 17,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0461"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.31449,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1020.0,
+     "25": -999.0,
+     "5": -1009.0,
+     "50": -928.0,
+     "75": -55.0,
+     "95": 105.0,
+     "99": 328.0,
+     "99.9": 967.0
+    },
+    "stored_max": 3585.0,
+    "stored_min": -1422.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    47.0,
+    112.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 17,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0477"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -993.0,
+    "frac_in_window": 0.43842,
+    "scaled_percentiles": {
+     "0.1": -1049.0,
+     "1": -1028.0,
+     "25": -934.0,
+     "5": -1010.0,
+     "50": -271.0,
+     "75": -1.0,
+     "95": 225.0,
+     "99": 713.0,
+     "99.9": 1459.0
+    },
+    "stored_max": 3232.0,
+    "stored_min": -1158.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    17.5,
+    121.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 2,
+   "processed_step5": 7,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 8,
+   "study_type": "ct thorax-neck",
+   "subject": "s0481"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.25055,
+    "scaled_percentiles": {
+     "0.1": -1031.0,
+     "1": -1024.0,
+     "25": -998.0,
+     "5": -1024.0,
+     "50": -951.0,
+     "75": -126.0,
+     "95": 96.0,
+     "99": 426.0,
+     "99.9": 1297.0
+    },
+    "stored_max": 3650.0,
+    "stored_min": -1732.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    63.0,
+    116.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct polytrauma",
+   "subject": "s0511"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.32767,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -953.0,
+     "75": -29.0,
+     "95": 88.0,
+     "99": 235.0,
+     "99.9": 1195.0
+    },
+    "stored_max": 3612.0,
+    "stored_min": -1433.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    47.0,
+    83.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct abdomen",
+   "subject": "s0513"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.38335,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -1001.0,
+     "5": -1023.0,
+     "50": -931.0,
+     "75": -82.0,
+     "95": 88.0,
+     "99": 293.0,
+     "99.9": 859.0
+    },
+    "stored_max": 3235.0,
+    "stored_min": -1151.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    57.0,
+    105.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0519"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1003.0,
+    "frac_in_window": 0.40013,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -985.0,
+     "5": -1014.0,
+     "50": -846.0,
+     "75": -17.0,
+     "95": 85.0,
+     "99": 411.0,
+     "99.9": 976.0
+    },
+    "stored_max": 2041.0,
+    "stored_min": -1059.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    16.0,
+    35.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 3,
+   "processed_step5": 8,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 10,
+   "study_type": "ct thorax",
+   "subject": "s0522"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1000.0,
+    "frac_in_window": 0.38676,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1020.0,
+     "25": -991.0,
+     "5": -1011.0,
+     "50": -843.0,
+     "75": -69.0,
+     "95": 144.0,
+     "99": 534.0,
+     "99.9": 2165.0
+    },
+    "stored_max": 3584.0,
+    "stored_min": -1506.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[0]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -82.5,
+    47.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct thorax",
+   "subject": "s0582"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.28518,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -999.0,
+     "5": -1024.0,
+     "50": -949.0,
+     "75": -88.0,
+     "95": 100.0,
+     "99": 432.0,
+     "99.9": 1316.0
+    },
+    "stored_max": 3444.0,
+    "stored_min": -1561.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    92.5,
+    141.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct polytrauma",
+   "subject": "s0591"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.39325,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1013.0,
+     "50": -913.0,
+     "75": -69.0,
+     "95": 102.0,
+     "99": 382.0,
+     "99.9": 985.0
+    },
+    "stored_max": 2688.0,
+    "stored_min": -1045.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    18.0,
+    103.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 7,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 9,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0649"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.37198,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -998.0,
+     "5": -1013.0,
+     "50": -924.0,
+     "75": -38.0,
+     "95": 105.0,
+     "99": 336.0,
+     "99.9": 845.0
+    },
+    "stored_max": 2613.0,
+    "stored_min": -1055.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    91.0,
+    98.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0703"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.49573,
+    "scaled_percentiles": {
+     "0.1": -1033.0,
+     "1": -1024.0,
+     "25": -1001.0,
+     "5": -1024.0,
+     "50": -144.0,
+     "75": -68.0,
+     "95": 81.0,
+     "99": 337.0,
+     "99.9": 944.0
+    },
+    "stored_max": 3071.0,
+    "stored_min": -1238.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    33.5,
+    80.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 16,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 20,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0720"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.27188,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1024.0,
+     "25": -1003.0,
+     "5": -1021.0,
+     "50": -970.0,
+     "75": -108.0,
+     "95": 86.0,
+     "99": 269.0,
+     "99.9": 878.0
+    },
+    "stored_max": 2439.0,
+    "stored_min": -1206.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    48.0,
+    118.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0726"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.21118,
+    "scaled_percentiles": {
+     "0.1": -1106.0,
+     "1": -1030.0,
+     "25": -992.0,
+     "5": -1020.0,
+     "50": -954.0,
+     "75": -506.0,
+     "95": 170.0,
+     "99": 481.0,
+     "99.9": 1395.0
+    },
+    "stored_max": 4009.0,
+    "stored_min": -1765.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    136.0,
+    180.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct polytrauma",
+   "subject": "s0727"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.43317,
+    "scaled_percentiles": {
+     "0.1": -1029.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -859.0,
+     "75": -64.0,
+     "95": 70.0,
+     "99": 298.0,
+     "99.9": 758.0
+    },
+    "stored_max": 2096.0,
+    "stored_min": -1227.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -22.0,
+    38.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax-neck",
+   "subject": "s0747"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.33064,
+    "scaled_percentiles": {
+     "0.1": -1031.0,
+     "1": -1024.0,
+     "25": -1005.0,
+     "5": -1024.0,
+     "50": -943.0,
+     "75": -97.0,
+     "95": 91.0,
+     "99": 239.0,
+     "99.9": 931.0
+    },
+    "stored_max": 3600.0,
+    "stored_min": -1472.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    55.0,
+    109.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0762"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.35239,
+    "scaled_percentiles": {
+     "0.1": -1029.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1024.0,
+     "50": -934.0,
+     "75": -80.0,
+     "95": 106.0,
+     "99": 425.0,
+     "99.9": 1390.0
+    },
+    "stored_max": 3473.0,
+    "stored_min": -1524.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    150.0,
+    169.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct polytrauma",
+   "subject": "s0763"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.321,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -999.0,
+     "5": -1024.0,
+     "50": -969.0,
+     "75": -88.0,
+     "95": 84.0,
+     "99": 353.0,
+     "99.9": 1296.0
+    },
+    "stored_max": 3607.0,
+    "stored_min": -1937.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    30.0,
+    128.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct polytrauma",
+   "subject": "s0777"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1000.0,
+    "frac_in_window": 0.47312,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1019.0,
+     "25": -947.0,
+     "5": -1008.0,
+     "50": -373.0,
+     "75": 0.0,
+     "95": 87.0,
+     "99": 442.0,
+     "99.9": 955.0
+    },
+    "stored_max": 3434.0,
+    "stored_min": -1055.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    33.5,
+    44.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax",
+   "subject": "s0811"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.28272,
+    "scaled_percentiles": {
+     "0.1": -1077.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -957.0,
+     "75": -111.0,
+     "95": 102.0,
+     "99": 397.0,
+     "99.9": 1585.0
+    },
+    "stored_max": 4300.0,
+    "stored_min": -1777.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    105.0,
+    167.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct polytrauma",
+   "subject": "s0812"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -999.0,
+    "frac_in_window": 0.29923,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1021.0,
+     "25": -997.0,
+     "5": -1008.0,
+     "50": -928.0,
+     "75": -7.0,
+     "95": 109.0,
+     "99": 412.0,
+     "99.9": 1370.0
+    },
+    "stored_max": 3305.0,
+    "stored_min": -1228.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    80.0,
+    86.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 18,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 22,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0859"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.36933,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -892.0,
+     "75": -15.0,
+     "95": 90.0,
+     "99": 429.0,
+     "99.9": 990.0
+    },
+    "stored_max": 1935.0,
+    "stored_min": -1295.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    32.0,
+    50.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax",
+   "subject": "s0866"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1003.0,
+    "frac_in_window": 0.26335,
+    "scaled_percentiles": {
+     "0.1": -3190.0,
+     "1": -1049.0,
+     "25": -1002.0,
+     "5": -1023.0,
+     "50": -958.0,
+     "75": -27.0,
+     "95": 106.0,
+     "99": 322.0,
+     "99.9": 819.0
+    },
+    "stored_max": 2692.0,
+    "stored_min": -9806.0
+   },
+   "hu_review_flags": [
+    "6738297 voxels < -4096 (padding)"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    77.0,
+    89.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [
+    "6738297 voxels stored below -4096 (padding/sentinel; clipped to -200.0 by the window)"
+   ],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0878"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.20116,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -1008.0,
+     "5": -1024.0,
+     "50": -995.0,
+     "75": -680.0,
+     "95": 137.0,
+     "99": 491.0,
+     "99.9": 1583.0
+    },
+    "stored_max": 3869.0,
+    "stored_min": -1548.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    104.0,
+    220.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct polytrauma",
+   "subject": "s0903"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -998.0,
+    "frac_in_window": 0.42144,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1024.0,
+     "25": -992.0,
+     "5": -1010.0,
+     "50": -811.0,
+     "75": -46.0,
+     "95": 79.0,
+     "99": 333.0,
+     "99.9": 1076.0
+    },
+    "stored_max": 3630.0,
+    "stored_min": -1405.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    28.0,
+    54.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct thorax",
+   "subject": "s0908"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.29773,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -999.0,
+     "5": -1017.0,
+     "50": -952.0,
+     "75": -55.0,
+     "95": 108.0,
+     "99": 370.0,
+     "99.9": 1001.0
+    },
+    "stored_max": 3385.0,
+    "stored_min": -1221.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    60.0,
+    93.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 17,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 21,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s0912"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -997.0,
+    "frac_in_window": 0.45623,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1019.0,
+     "25": -979.0,
+     "5": -1008.0,
+     "50": -587.0,
+     "75": -24.0,
+     "95": 141.0,
+     "99": 388.0,
+     "99.9": 978.0
+    },
+    "stored_max": 2926.0,
+    "stored_min": -1069.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[65]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -178.0,
+    112.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax-neck",
+   "subject": "s0914"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1002.0,
+    "frac_in_window": 0.34662,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1021.0,
+     "25": -993.0,
+     "5": -1013.0,
+     "50": -923.0,
+     "75": 4.0,
+     "95": 103.0,
+     "99": 314.0,
+     "99.9": 712.0
+    },
+    "stored_max": 3505.0,
+    "stored_min": -1149.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    60.0,
+    75.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0915"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1002.0,
+    "frac_in_window": 0.48511,
+    "scaled_percentiles": {
+     "0.1": -2790.0,
+     "1": -1029.0,
+     "25": -888.0,
+     "5": -1007.0,
+     "50": -94.0,
+     "75": -26.0,
+     "95": 99.0,
+     "99": 378.0,
+     "99.9": 906.0
+    },
+    "stored_max": 3355.0,
+    "stored_min": -9745.0
+   },
+   "hu_review_flags": [
+    "8490564 voxels < -4096 (padding)"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    3.0,
+    84.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [
+    "8490564 voxels stored below -4096 (padding/sentinel; clipped to -200.0 by the window)"
+   ],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0928"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.39868,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1019.0,
+     "25": -990.0,
+     "5": -1011.0,
+     "50": -883.0,
+     "75": -31.0,
+     "95": 106.0,
+     "99": 430.0,
+     "99.9": 953.0
+    },
+    "stored_max": 1779.0,
+    "stored_min": -1046.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    19.5,
+    74.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 17,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0950"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -997.0,
+    "frac_in_window": 0.50353,
+    "scaled_percentiles": {
+     "0.1": -1021.0,
+     "1": -1012.0,
+     "25": -959.0,
+     "5": -1004.0,
+     "50": -128.0,
+     "75": -37.0,
+     "95": 78.0,
+     "99": 519.0,
+     "99.9": 2488.0
+    },
+    "stored_max": 3495.0,
+    "stored_min": -1496.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -41.0,
+    49.5
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0963"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -997.0,
+    "frac_in_window": 0.34378,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1019.0,
+     "25": -991.0,
+     "5": -1006.0,
+     "50": -914.0,
+     "75": -12.0,
+     "95": 199.0,
+     "99": 439.0,
+     "99.9": 1299.0
+    },
+    "stored_max": 3351.0,
+    "stored_min": -1176.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    146.5,
+    195.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s0965"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.15409,
+    "scaled_percentiles": {
+     "0.1": -1029.0,
+     "1": -1024.0,
+     "25": -1006.0,
+     "5": -1024.0,
+     "50": -996.0,
+     "75": -919.0,
+     "95": 86.0,
+     "99": 444.0,
+     "99.9": 1583.0
+    },
+    "stored_max": 3454.0,
+    "stored_min": -1233.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    54.0,
+    168.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct polytrauma",
+   "subject": "s0970"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1002.0,
+    "frac_in_window": 0.43038,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1023.0,
+     "25": -986.0,
+     "5": -1015.0,
+     "50": -774.0,
+     "75": -62.0,
+     "95": 171.0,
+     "99": 438.0,
+     "99.9": 1050.0
+    },
+    "stored_max": 3236.0,
+    "stored_min": -1064.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    61.0,
+    153.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 17,
+   "study_type": "ct thorax-neck",
+   "subject": "s0999"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.189,
+    "scaled_percentiles": {
+     "0.1": -1094.0,
+     "1": -1025.0,
+     "25": -1007.0,
+     "5": -1024.0,
+     "50": -983.0,
+     "75": -838.0,
+     "95": 122.0,
+     "99": 534.0,
+     "99.9": 1758.0
+    },
+    "stored_max": 4463.0,
+    "stored_min": -1715.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    105.0,
+    190.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct polytrauma",
+   "subject": "s1029"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.31663,
+    "scaled_percentiles": {
+     "0.1": -1029.0,
+     "1": -1024.0,
+     "25": -985.0,
+     "5": -1023.0,
+     "50": -895.0,
+     "75": -79.0,
+     "95": 110.0,
+     "99": 419.0,
+     "99.9": 1228.0
+    },
+    "stored_max": 3472.0,
+    "stored_min": -1292.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    48.0,
+    61.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax",
+   "subject": "s1042"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.15632,
+    "scaled_percentiles": {
+     "0.1": -1107.0,
+     "1": -1026.0,
+     "25": -1011.0,
+     "5": -1024.0,
+     "50": -984.0,
+     "75": -904.0,
+     "95": 98.0,
+     "99": 395.0,
+     "99.9": 1590.0
+    },
+    "stored_max": 4015.0,
+    "stored_min": -1794.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    62.0,
+    169.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct polytrauma",
+   "subject": "s1082"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -996.0,
+    "frac_in_window": 0.42267,
+    "scaled_percentiles": {
+     "0.1": -3299.0,
+     "1": -3024.0,
+     "25": -1007.0,
+     "5": -3024.0,
+     "50": -841.0,
+     "75": -19.0,
+     "95": 110.0,
+     "99": 334.0,
+     "99.9": 978.0
+    },
+    "stored_max": 3552.0,
+    "stored_min": -3677.0
+   },
+   "hu_review_flags": [
+    "p1=-3024.0 (below air)"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    36.0,
+    103.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s1086"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.2943,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -999.0,
+     "5": -1024.0,
+     "50": -948.0,
+     "75": -89.0,
+     "95": 89.0,
+     "99": 360.0,
+     "99.9": 1129.0
+    },
+    "stored_max": 3510.0,
+    "stored_min": -1254.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    66.0,
+    114.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct polytrauma",
+   "subject": "s1123"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.26887,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -993.0,
+     "5": -1019.0,
+     "50": -928.0,
+     "75": -69.0,
+     "95": 81.0,
+     "99": 581.0,
+     "99.9": 1661.0
+    },
+    "stored_max": 3504.0,
+    "stored_min": -1490.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    44.0,
+    56.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct polytrauma",
+   "subject": "s1124"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.40427,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1024.0,
+     "25": -1000.0,
+     "5": -1021.0,
+     "50": -928.0,
+     "75": -69.0,
+     "95": 101.0,
+     "99": 353.0,
+     "99.9": 1052.0
+    },
+    "stored_max": 3642.0,
+    "stored_min": -1469.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    20.0,
+    103.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s1127"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1002.0,
+    "frac_in_window": 0.46445,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1022.0,
+     "25": -960.0,
+     "5": -1011.0,
+     "50": -417.0,
+     "75": -3.0,
+     "95": 178.0,
+     "99": 513.0,
+     "99.9": 1149.0
+    },
+    "stored_max": 3374.0,
+    "stored_min": -1078.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    112.0,
+    149.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 8,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 10,
+   "study_type": "ct thorax-neck",
+   "subject": "s1144"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.34554,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -995.0,
+     "5": -1019.0,
+     "50": -910.0,
+     "75": -49.0,
+     "95": 153.0,
+     "99": 454.0,
+     "99.9": 1034.0
+    },
+    "stored_max": 3172.0,
+    "stored_min": -1069.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[0]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -66.0,
+    121.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 5,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 18,
+   "study_type": "ct thorax-neck",
+   "subject": "s1164"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.33049,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1020.0,
+     "25": -988.0,
+     "5": -1012.0,
+     "50": -889.0,
+     "75": -29.0,
+     "95": 79.0,
+     "99": 351.0,
+     "99.9": 848.0
+    },
+    "stored_max": 2570.0,
+    "stored_min": -1063.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    26.0,
+    47.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 17,
+   "study_type": "ct thorax",
+   "subject": "s1167"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.20508,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -996.0,
+     "5": -1023.0,
+     "50": -942.0,
+     "75": -616.0,
+     "95": 110.0,
+     "99": 380.0,
+     "99.9": 1231.0
+    },
+    "stored_max": 3500.0,
+    "stored_min": -1406.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    6.5,
+    153.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct polytrauma",
+   "subject": "s1206"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.41927,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1021.0,
+     "25": -953.0,
+     "5": -1009.0,
+     "50": -806.0,
+     "75": 10.0,
+     "95": 94.0,
+     "99": 377.0,
+     "99.9": 1456.0
+    },
+    "stored_max": 3403.0,
+    "stored_min": -1309.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    5.0,
+    47.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct thorax",
+   "subject": "s1221"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.39623,
+    "scaled_percentiles": {
+     "0.1": -1098.0,
+     "1": -1024.0,
+     "25": -1024.0,
+     "5": -1024.0,
+     "50": -977.0,
+     "75": -67.0,
+     "95": 76.0,
+     "99": 290.0,
+     "99.9": 807.0
+    },
+    "stored_max": 3366.0,
+    "stored_min": -1772.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -31.0,
+    86.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 8,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 10,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s1233"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1000.0,
+    "frac_in_window": 0.62497,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1017.0,
+     "25": -857.0,
+     "5": -1004.0,
+     "50": -111.0,
+     "75": -11.0,
+     "95": 78.0,
+     "99": 366.0,
+     "99.9": 810.0
+    },
+    "stored_max": 1373.0,
+    "stored_min": -1055.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    18.0,
+    37.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct thorax",
+   "subject": "s1245"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -999.0,
+    "frac_in_window": 0.41138,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1023.0,
+     "25": -993.0,
+     "5": -1012.0,
+     "50": -894.0,
+     "75": 11.0,
+     "95": 114.0,
+     "99": 368.0,
+     "99.9": 933.0
+    },
+    "stored_max": 2498.0,
+    "stored_min": -1054.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    45.0,
+    104.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s1267"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.35214,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1024.0,
+     "25": -999.0,
+     "5": -1009.0,
+     "50": -933.0,
+     "75": -38.0,
+     "95": 111.0,
+     "99": 337.0,
+     "99.9": 965.0
+    },
+    "stored_max": 3222.0,
+    "stored_min": -1045.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -48.0,
+    92.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s1287"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.45801,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -995.0,
+     "5": -1024.0,
+     "50": -795.0,
+     "75": -61.0,
+     "95": 98.0,
+     "99": 317.0,
+     "99.9": 901.0
+    },
+    "stored_max": 3211.0,
+    "stored_min": -1239.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    61.0,
+    103.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct neck-thorax-abdomen-pelvis",
+   "subject": "s1336"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.36396,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -991.0,
+     "5": -1023.0,
+     "50": -898.0,
+     "75": -39.0,
+     "95": 92.0,
+     "99": 291.0,
+     "99.9": 751.0
+    },
+    "stored_max": 2871.0,
+    "stored_min": -1156.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -27.0,
+    74.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct thorax-neck",
+   "subject": "s1337"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1001.0,
+    "frac_in_window": 0.41462,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1018.0,
+     "25": -994.0,
+     "5": -1008.0,
+     "50": -866.0,
+     "75": 3.0,
+     "95": 108.0,
+     "99": 370.0,
+     "99.9": 948.0
+    },
+    "stored_max": 1564.0,
+    "stored_min": -1046.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[270]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -65.0,
+    77.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct thorax-abdomen-pelvis",
+   "subject": "s1348"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.16577,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -1011.0,
+     "5": -1024.0,
+     "50": -999.0,
+     "75": -918.0,
+     "95": 70.0,
+     "99": 299.0,
+     "99.9": 1211.0
+    },
+    "stored_max": 3691.0,
+    "stored_min": -1393.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    114.0,
+    153.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct polytrauma",
+   "subject": "s1350"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.2937,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1024.0,
+     "50": -895.0,
+     "75": -37.0,
+     "95": 80.0,
+     "99": 472.0,
+     "99.9": 1143.0
+    },
+    "stored_max": 3383.0,
+    "stored_min": -1182.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    13.0,
+    24.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct thorax",
+   "subject": "s1353"
+  },
+  {
+   "boundary_touching": true,
+   "hu": {
+    "air_mode_scaled": -1004.0,
+    "frac_in_window": 0.49026,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1019.0,
+     "25": -987.0,
+     "5": -1011.0,
+     "50": -154.0,
+     "75": 6.0,
+     "95": 154.0,
+     "99": 615.0,
+     "99.9": 1379.0
+    },
+    "stored_max": 2079.0,
+    "stored_min": -1050.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    141.0,
+    175.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": false,
+   "processed_step17": 0,
+   "processed_step5": 2,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 2,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1358"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.41737,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -1000.0,
+     "5": -1024.0,
+     "50": -923.0,
+     "75": -66.0,
+     "95": 94.0,
+     "99": 336.0,
+     "99.9": 961.0
+    },
+    "stored_max": 3274.0,
+    "stored_min": -1218.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    38.0,
+    85.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1361"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1003.0,
+    "frac_in_window": 0.32939,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1023.0,
+     "25": -999.0,
+     "5": -1014.0,
+     "50": -937.0,
+     "75": -36.0,
+     "95": 140.0,
+     "99": 453.0,
+     "99.9": 1197.0
+    },
+    "stored_max": 3485.0,
+    "stored_min": -1269.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -16.0,
+    138.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1364"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.30756,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -1003.0,
+     "5": -1023.0,
+     "50": -952.0,
+     "75": -107.0,
+     "95": 87.0,
+     "99": 393.0,
+     "99.9": 1101.0
+    },
+    "stored_max": 3576.0,
+    "stored_min": -1140.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    72.0,
+    109.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1365"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.25434,
+    "scaled_percentiles": {
+     "0.1": -1032.0,
+     "1": -1024.0,
+     "25": -1013.0,
+     "5": -1024.0,
+     "50": -989.0,
+     "75": -131.0,
+     "95": 69.0,
+     "99": 214.0,
+     "99.9": 982.0
+    },
+    "stored_max": 3248.0,
+    "stored_min": -1467.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    69.0,
+    95.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct polytrauma",
+   "subject": "s1366"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.34553,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -1001.0,
+     "5": -1024.0,
+     "50": -940.0,
+     "75": -124.0,
+     "95": 56.0,
+     "99": 314.0,
+     "99.9": 1339.0
+    },
+    "stored_max": 3310.0,
+    "stored_min": -1243.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -10.0,
+    29.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct whole body",
+   "subject": "s1369"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.50628,
+    "scaled_percentiles": {
+     "0.1": -1110.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -145.0,
+     "75": -23.0,
+     "95": 169.0,
+     "99": 511.0,
+     "99.9": 2000.0
+    },
+    "stored_max": 3809.0,
+    "stored_min": -1871.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    25.0,
+    57.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1370"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1000.0,
+    "frac_in_window": 0.28198,
+    "scaled_percentiles": {
+     "0.1": -3247.0,
+     "1": -3025.0,
+     "25": -3022.0,
+     "5": -3024.0,
+     "50": -983.0,
+     "75": -113.0,
+     "95": 79.0,
+     "99": 320.0,
+     "99.9": 1328.0
+    },
+    "stored_max": 3549.0,
+    "stored_min": -3768.0
+   },
+   "hu_review_flags": [
+    "p1=-3025.0 (below air)"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    49.0,
+    70.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct whole body",
+   "subject": "s1371"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1002.0,
+    "frac_in_window": 0.381,
+    "scaled_percentiles": {
+     "0.1": -1024.0,
+     "1": -1019.0,
+     "25": -988.0,
+     "5": -1010.0,
+     "50": -884.0,
+     "75": -21.0,
+     "95": 184.0,
+     "99": 545.0,
+     "99.9": 3069.0
+    },
+    "stored_max": 3452.0,
+    "stored_min": -1453.0
+   },
+   "hu_review_flags": [
+    "p99.9=3069.0 (very dense material/metal)"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    49.0,
+    70.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1372"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -998.0,
+    "frac_in_window": 0.42363,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1016.0,
+     "25": -991.0,
+     "5": -1006.0,
+     "50": -846.0,
+     "75": 7.0,
+     "95": 124.0,
+     "99": 553.0,
+     "99.9": 1323.0
+    },
+    "stored_max": 2453.0,
+    "stored_min": -1048.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    68.5,
+    119.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1373"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1004.0,
+    "frac_in_window": 0.40606,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1024.0,
+     "25": -995.0,
+     "5": -1015.0,
+     "50": -917.0,
+     "75": -44.0,
+     "95": 128.0,
+     "99": 493.0,
+     "99.9": 1405.0
+    },
+    "stored_max": 3353.0,
+    "stored_min": -1171.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[205]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -81.0,
+    148.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1374"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.42194,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -996.0,
+     "5": -1023.0,
+     "50": -881.0,
+     "75": -36.0,
+     "95": 117.0,
+     "99": 427.0,
+     "99.9": 1060.0
+    },
+    "stored_max": 3197.0,
+    "stored_min": -1062.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -1.0,
+    97.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1379"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.46244,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -996.0,
+     "5": -1022.0,
+     "50": -667.0,
+     "75": -19.0,
+     "95": 112.0,
+     "99": 417.0,
+     "99.9": 1172.0
+    },
+    "stored_max": 3139.0,
+    "stored_min": -1207.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    75.0,
+    113.5
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1383"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.14995,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -1014.0,
+     "5": -1024.0,
+     "50": -999.0,
+     "75": -934.0,
+     "95": 51.0,
+     "99": 278.0,
+     "99.9": 1622.0
+    },
+    "stored_max": 3585.0,
+    "stored_min": -1606.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    38.0,
+    47.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 7,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 8,
+   "study_type": "ct whole body",
+   "subject": "s1384"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.43237,
+    "scaled_percentiles": {
+     "0.1": -1028.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1023.0,
+     "50": -882.0,
+     "75": -64.0,
+     "95": 76.0,
+     "99": 294.0,
+     "99.9": 854.0
+    },
+    "stored_max": 3239.0,
+    "stored_min": -1179.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -45.0,
+    83.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 10,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 12,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1387"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.27347,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -1009.0,
+     "5": -1024.0,
+     "50": -986.0,
+     "75": -141.0,
+     "95": 44.0,
+     "99": 275.0,
+     "99.9": 1100.0
+    },
+    "stored_max": 3267.0,
+    "stored_min": -1141.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    0.0,
+    49.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 12,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 15,
+   "study_type": "ct whole body",
+   "subject": "s1388"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -979.0,
+    "frac_in_window": 0.64322,
+    "scaled_percentiles": {
+     "0.1": -1372.0,
+     "1": -1157.0,
+     "25": -706.0,
+     "5": -1054.0,
+     "50": -70.0,
+     "75": 58.0,
+     "95": 230.0,
+     "99": 461.0,
+     "99.9": 1115.0
+    },
+    "stored_max": 2197.0,
+    "stored_min": -9388.0
+   },
+   "hu_review_flags": [
+    "p1=-1157.0 (below air)",
+    "58209 voxels < -4096 (padding)",
+    "tilted 4.394 deg",
+    "non-square in-plane"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    23.0,
+    81.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [
+    "58209 voxels stored below -4096 (padding/sentinel; clipped to -200.0 by the window)"
+   ],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 14,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1389"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.46192,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1024.0,
+     "50": -754.0,
+     "75": -21.0,
+     "95": 89.0,
+     "99": 340.0,
+     "99.9": 1000.0
+    },
+    "stored_max": 1642.0,
+    "stored_min": -1251.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    92.0,
+    119.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 8,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 10,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1390"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.39095,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -997.0,
+     "5": -1018.0,
+     "50": -924.0,
+     "75": -45.0,
+     "95": 63.0,
+     "99": 340.0,
+     "99.9": 909.0
+    },
+    "stored_max": 3240.0,
+    "stored_min": -1140.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -34.0,
+    46.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1391"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.42233,
+    "scaled_percentiles": {
+     "0.1": -1027.0,
+     "1": -1024.0,
+     "25": -998.0,
+     "5": -1023.0,
+     "50": -878.0,
+     "75": -50.0,
+     "95": 103.0,
+     "99": 449.0,
+     "99.9": 1090.0
+    },
+    "stored_max": 3262.0,
+    "stored_min": -1272.0
+   },
+   "hu_review_flags": [
+    "label median HU outside [-50,300] on z=[238]"
+   ],
+   "images_exact": true,
+   "label_median_hu_range": [
+    -113.0,
+    86.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 14,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 18,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1395"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.27677,
+    "scaled_percentiles": {
+     "0.1": -1030.0,
+     "1": -1024.0,
+     "25": -1008.0,
+     "5": -1024.0,
+     "50": -972.0,
+     "75": -123.0,
+     "95": 63.0,
+     "99": 523.0,
+     "99.9": 1577.0
+    },
+    "stored_max": 3420.0,
+    "stored_min": -1473.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    12.0,
+    44.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 8,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 10,
+   "study_type": "ct whole body",
+   "subject": "s1397"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.35521,
+    "scaled_percentiles": {
+     "0.1": -1026.0,
+     "1": -1024.0,
+     "25": -1001.0,
+     "5": -1018.0,
+     "50": -937.0,
+     "75": -76.0,
+     "95": 112.0,
+     "99": 438.0,
+     "99.9": 1117.0
+    },
+    "stored_max": 3443.0,
+    "stored_min": -1053.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    66.0,
+    110.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 3,
+   "processed_step5": 11,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 13,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1400"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1003.0,
+    "frac_in_window": 0.40492,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1024.0,
+     "25": -1000.0,
+     "5": -1014.0,
+     "50": -931.0,
+     "75": -8.0,
+     "95": 88.0,
+     "99": 403.0,
+     "99.9": 1094.0
+    },
+    "stored_max": 2853.0,
+    "stored_min": -1137.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    25.5,
+    57.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 5,
+   "processed_step5": 15,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 19,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1403"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1024.0,
+    "frac_in_window": 0.40919,
+    "scaled_percentiles": {
+     "0.1": -1033.0,
+     "1": -1024.0,
+     "25": -1002.0,
+     "5": -1024.0,
+     "50": -804.0,
+     "75": -61.0,
+     "95": 126.0,
+     "99": 509.0,
+     "99.9": 1224.0
+    },
+    "stored_max": 3367.0,
+    "stored_min": -1323.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    91.0,
+    207.5
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 4,
+   "processed_step5": 13,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 16,
+   "study_type": "ct angiography thorax-abdomen-pelvis",
+   "subject": "s1404"
+  },
+  {
+   "boundary_touching": false,
+   "hu": {
+    "air_mode_scaled": -1003.0,
+    "frac_in_window": 0.47316,
+    "scaled_percentiles": {
+     "0.1": -1025.0,
+     "1": -1023.0,
+     "25": -990.0,
+     "5": -1013.0,
+     "50": -439.0,
+     "75": -31.0,
+     "95": 103.0,
+     "99": 407.0,
+     "99.9": 965.0
+    },
+    "stored_max": 3262.0,
+    "stored_min": -1179.0
+   },
+   "hu_review_flags": [],
+   "images_exact": true,
+   "label_median_hu_range": [
+    67.5,
+    138.0
+   ],
+   "masks_exact": true,
+   "prep_warnings": [],
+   "primary": true,
+   "processed_step17": 2,
+   "processed_step5": 9,
+   "scaling": [
+    1.0,
+    0.0
+   ],
+   "slices_checked": 11,
+   "study_type": "ct angiography abdomen-pelvis",
+   "subject": "s1405"
+  }
+ ],
+ "totals": {
+  "all_eligible_step5_processed": 1003,
+  "eligible_subjects": 91,
+  "image_files": 1239,
+  "mask_files": 1239,
+  "prep_peak_working_set_bytes": 182931456,
+  "primary_step5": {
+   "manifest_mask_eligible": 826,
+   "processed": 826
+  },
+  "primary_subjects": 74,
+  "qc_peak_working_set_bytes": 249843712,
+  "sensitivity_step17": {
+   "manifest_mask_eligible": 300,
+   "processed": 300,
+   "subjects_with_zero_processed": [
+    "s1358"
+   ]
+  },
+  "sensitivity_subjects": 91,
+  "slices_independently_checked": 1239,
+  "subjects_qc_checked": 91,
+  "subjects_with_hu_review_flags": [
+   "s0250",
+   "s0582",
+   "s0878",
+   "s0914",
+   "s0928",
+   "s1086",
+   "s1164",
+   "s1348",
+   "s1371",
+   "s1372",
+   "s1374",
+   "s1389",
+   "s1395"
+  ],
+  "subjects_with_prep_warnings": [
+   "s0878",
+   "s0928",
+   "s1389"
+  ],
+  "unique_png_pairs": 1239
+ }
+}
