@@ -615,3 +615,11 @@ both protected.
 
 * Committed `TEAM_SETUP.md`, `demo_results.py` and this log as ThrashaShetty (no co-author line); pushed `main` and
   fast-forwarded `external-evaluation-results` to the same commit.
+
+## 2026-11-24 — AI-assistant app name removed from file text (user approved)
+
+* Wording-only edit in 6 files: `PROGRESS_LOG.md`, `RUN_PHASE_A.md`, `scripts/launch_phase_a.ps1` and the 3 Phase A run
+  logs (`phaseA_20261123T040950Z.log`, `phaseA_20261123T201638Z.log`, `phaseA_20261124T022744Z.log`). The app's name
+  was replaced by "the AI assistant" in the "close … and browsers" messages and log notes. One line per run log
+  changed; no timestamps, numbers or results changed. None of these files is protected or hash-referenced; the
+  1,488 protected files still verify.
