@@ -583,3 +583,35 @@ both protected.
   https://github.com/ThrashaShetty/Majorr-Project (public). The token pasted in chat now returns 401 (revoked).
 * The three log entries above (secrets check / attempts 2–3) and this one are committed as a normal follow-up commit
   (no amend, no force push).
+
+## 2026-11-24 — plain-language project guide (user requested)
+
+* Wrote a 25-page layman guide (Word + PDF) to `C:\Anvith\FINALYEARPROJECTTHRASHA\Project_Guide\` (outside the
+  git repo): datasets, installed software, every processing step, the four methods, metrics and statistics, results
+  with 5 project figures, novelty, exploratory tools, limitations, glossary, file map. All numbers taken from
+  `docs/FINAL_REPORT_DRAFT.md`, `docs/DATASET_DOCUMENTATION.md`, `docs/OBJECTIVES_STATUS.md` and `requirements.txt`.
+  No protected file touched; SAM not loaded. Uncommitted.
+
+## 2026-11-24 — team setup instructions and results demo (user requested)
+
+* Added `TEAM_SETUP.md` (clone → install → tests → results demo; live dashboard with SAM; re-run evaluation;
+  troubleshooting) and `demo_results.py` (read-only; re-runs the frozen v3 and external analyses from the raw rows
+  and checks they equal the saved results; no SAM).
+* Verified on a fresh `git clone` of https://github.com/ThrashaShetty/Majorr-Project into the scratchpad:
+  `tests/` 93 passed, 2 deselected; external tests 110 passed; `demo_results.py`: v3 reproduced exactly, primary and
+  sensitivity analyses identical to `analysis.json`, ALL CHECKS PASSED.
+* SAM not loaded (no "go"; free RAM 0.76 GiB). Live dashboard demo not run. Uncommitted.
+
+## 2026-11-24 — contributors changed: history rewritten and force-pushed (user approved)
+
+* User asked to remove Anvith433 and the AI assistant from the GitHub contributors and approved a force push.
+* All 12 commits rewritten (author and committer = `ThrashaShetty <177899119+ThrashaShetty@users.noreply.github.com>`,
+  original timestamps kept, AI co-author trailer lines removed). File tree identical (tree hash asserted).
+  Old tip `4a363ce` kept as local tag `pre-author-rewrite-4a363ce`; new tip `551d88e`.
+* `git push --force-with-lease` of `main` and `external-evaluation-results`: both `4a363ce...551d88e (forced update)`.
+* This repo's local git identity is now ThrashaShetty; future commits carry no AI co-author line.
+
+## 2026-11-24 — commit and push team setup files (user requested)
+
+* Committed `TEAM_SETUP.md`, `demo_results.py` and this log as ThrashaShetty (no co-author line); pushed `main` and
+  fast-forwarded `external-evaluation-results` to the same commit.
