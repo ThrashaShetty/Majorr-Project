@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAM Exploratory Dashboard</title>
+<!-- Exploratory dashboard (Phase C.3). Talks to backend.extensions.serve (/ext/*). frontend/index.html is unchanged. -->
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1b1f24;--muted:#5b6470;--line:#d9dde3;--acc:#0b6bcb;--warn:#a15c00;--ok:#1a7f37;--bad:#c62828}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111418;--card:#1a1f25;--ink:#e6e9ee;--muted:#9aa4b0;--line:#2c333c;--acc:#58a6ff;--warn:#e3a33b;--ok:#4cc26b;--bad:#ff6b6b}}
+:root[data-theme="dark"]{--bg:#111418;--card:#1a1f25;--ink:#e6e9ee;--muted:#9aa4b0;--line:#2c333c;--acc:#58a6ff;--warn:#e3a33b;--ok:#4cc26b;--bad:#ff6b6b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:17px;margin:0}
+.banner{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn);padding:8px 16px;font-size:13px}
+main{max-width:1200px;margin:0 auto;padding:16px;display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;align-items:end}
+label{display:grid;gap:4px;font-size:12px;color:var(--muted)}
+input,select,button{font:inherit;color:var(--ink)}
+select,input[type=number]{padding:6px;border:1px solid var(--line);border-radius:6px;background:var(--card)}
+button{padding:8px 14px;border-radius:6px;border:1px solid var(--acc);background:var(--acc);color:#fff;cursor:pointer}
+button.sec{background:transparent;color:var(--acc)}
+button:disabled{opacity:.5;cursor:default}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+figure{margin:0}
+figure img{width:100%;image-rendering:pixelated;border:1px solid var(--line);border-radius:6px;background:#000;display:block}
+figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+#overlay{cursor:crosshair}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}
+.status{font-size:12px;color:var(--muted)}
+.pill{display:inline-block;padding:1px 8px;border-radius:99px;border:1px solid var(--line);font-size:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#err{color:var(--bad);font-size:13px;min-height:1em}
+</style>
+</head>
+<body>
+<header>
+  <h1>SAM exploratory dashboard</h1>
+  <span id="apiStatus" class="status">checking backend…</span>
+</header>
+<div class="banner">Exploratory features (uncertainty, click refinement, prompt overlay). Not part of the frozen confirmatory analysis. Research prototype — not for diagnosis.</div>
+<main>
+  <section class="card">
+    <div class="controls">
+      <label>Support image<input type="file" id="support_image" accept="image/*"></label>
+      <label>Support mask<input type="file" id="support_mask" accept="image/*"></label>
+      <label>Query image<input type="file" id="query_image" accept="image/*"></label>
+      <label>Query mask (optional, for metrics)<input type="file" id="query_mask" accept="image/*"></label>
+      <label>Method
+        <select id="method">
+          <option value="baseline">Baseline (support box)</option>
+          <option value="enhanced">Enhanced v2</option>
+          <option value="a5">A5 (area-ratio switch)</option>
+          <option value="single">Single-mask</option>
+        </select>
+      </label>
+      <label>Perturbations K<input type="number" id="k" min="2" max="16" value="8"></label>
+      <label class="row" style="color:var(--ink)"><input type="checkbox" id="unc" checked> Compute uncertainty</label>
+      <button id="run">Segment</button>
+    </div>
+    <div id="err"></div>
+  </section>
+
+  <section class="card" id="results" hidden>
+    <div class="row" style="justify-content:space-between;margin-bottom:10px">
+      <div class="row"><span class="pill" id="methodPill"></span><span class="status" id="ratio"></span></div>
+      <div class="row">
+        <span class="status">Click on the overlay to refine:</span>
+        <label class="row" style="color:var(--ink)"><input type="radio" name="lab" value="1" checked> add</label>
+        <label class="row" style="color:var(--ink)"><input type="radio" name="lab" value="0"> remove</label>
+        <button class="sec" id="reset">Reset clicks</button>
+      </div>
+    </div>
+    <div class="grid">
+      <figure><img id="support" alt="support image with mask"><figcaption>Support image + mask</figcaption></figure>
+      <figure><img id="query" alt="query image"><figcaption>Query image</figcaption></figure>
+      <figure><img id="overlay" alt="overlay with prompts; click to refine"><figcaption>Overlay: prompt box (yellow), points (green +, red −), clicks (rings)</figcaption></figure>
+      <figure><img id="mask" alt="predicted mask"><figcaption>Predicted mask</figcaption></figure>
+      <figure id="entF"><img id="entropy" alt="multimask entropy heatmap"><figcaption>Multimask entropy</figcaption></figure>
+      <figure id="varF"><img id="variance" alt="perturbation variance heatmap"><figcaption>Perturbation variance</figcaption></figure>
+    </div>
+    <div class="grid" style="margin-top:12px">
+      <div><h3 style="margin:4px 0;font-size:14px">Metrics</h3><table id="metrics"></table></div>
+      <div><h3 style="margin:4px 0;font-size:14px">Prompts & uncertainty</h3><table id="info"></table></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row" style="justify-content:space-between">
+      <h2 style="font-size:15px;margin:0">Experiment history</h2>
+      <div class="row">
+        <select id="hMethod"><option value="">all methods</option><option>baseline</option><option>enhanced</option><option>a5</option><option>single</option></select>
+        <button class="sec" id="hRefresh">Refresh</button>
+        <button class="sec" id="hCompare">Compare selected</button>
+        <button class="sec" id="hCsv">CSV</button>
+        <button class="sec" id="hHtml">HTML report</button>
+        <button class="sec" id="hPdf">PDF report</button>
+      </div>
+    </div>
+    <p class="status">Exports use the selected runs, or all runs if none are selected. Single interactive runs — not cohort results.</p>
+    <div style="overflow-x:auto"><table id="hTable"></table></div>
+    <div style="overflow-x:auto;margin-top:12px"><table id="cTable"></table></div>
+  </section>
+</main>
+<script>
+const API = (new URLSearchParams(location.search).get("api")) || "http://localhost:8000";
+const $ = id => document.getElementById(id);
+let session = null, imgW = 0, imgH = 0, busy = false;
+const png = b => "data:image/png;base64," + b;
+const fmt = v => v === null || v === undefined ? "—" : (typeof v === "number" ? v.toFixed(4) : String(v));
+
+function setErr(m){ $("err").textContent = m || ""; }
+function rows(t, obj){ t.innerHTML = Object.entries(obj).map(([k,v]) => `<tr><th>${k}</th><td>${fmt(v)}</td></tr>`).join(""); }
+
+async function health(){
+  try{
+    const h = await (await fetch(`${API}/ext/health`)).json();
+    $("apiStatus").textContent = h.sam_loaded ? `SAM loaded (${h.device})` : `SAM not loaded${h.detail ? ": " + h.detail : " yet…"}`;
+    if(!h.sam_loaded && !h.detail) setTimeout(health, 3000);
+  }catch(e){ $("apiStatus").textContent = `Backend unreachable (${API})`; }
+}
+
+async function call(path, opts){
+  const r = await fetch(API + path, opts);
+  const j = await r.json().catch(() => ({}));
+  if(!r.ok) throw new Error(j.detail ? (typeof j.detail === "string" ? j.detail : JSON.stringify(j.detail)) : `HTTP ${r.status}`);
+  return j;
+}
+
+function showRefined(j){
+  $("overlay").src = png(j.overlay_b64); $("mask").src = png(j.mask_b64);
+  rows($("metrics"), {...j.metrics, clicks: j.clicks.length});
+  loadHistory();
+}
+
+$("run").onclick = async () => {
+  setErr("");
+  const fd = new FormData();
+  for(const f of ["support_image","support_mask","query_image"]){
+    if(!$(f).files[0]) return setErr(`Choose a ${f.replace("_"," ")}.`);
+    fd.append(f, $(f).files[0]);
+  }
+  if($("query_mask").files[0]) fd.append("query_mask", $("query_mask").files[0]);
+  fd.append("method", $("method").value); fd.append("k", $("k").value); fd.append("uncertainty", $("unc").checked);
+  $("run").disabled = true; $("run").textContent = "Running…";
+  try{
+    const j = await call("/ext/segment", {method:"POST", body:fd});
+    session = j.session_id;
+    $("results").hidden = false;
+    $("methodPill").textContent = j.method === j.method_used ? j.method : `${j.method} → ${j.method_used}`;
+    $("ratio").textContent = j.a5_ratio !== null ? `area ratio ${j.a5_ratio.toFixed(3)} (box kept if 0.5–2.0)` : "";
+    $("support").src = png(j.support_b64); $("query").src = png(j.query_b64);
+    $("overlay").src = png(j.overlay_b64); $("mask").src = png(j.mask_b64);
+    const im = new Image(); im.onload = () => { imgW = im.naturalWidth; imgH = im.naturalHeight; }; im.src = png(j.query_b64);
+    rows($("metrics"), {...j.metrics, sam_score: j.sam_score, clicks: 0});
+    loadHistory();
+    const u = j.uncertainty;
+    $("entF").hidden = $("varF").hidden = !u;
+    if(u){ $("entropy").src = png(u.entropy_b64); $("variance").src = png(u.variance_b64); }
+    rows($("info"), {box: j.prompts.box ? j.prompts.box.map(v => v.toFixed(0)).join(", ") : "—",
+      points: j.prompts.points.length ? j.prompts.points.map((p,i) => `(${p[0].toFixed(0)},${p[1].toFixed(0)})${j.prompts.labels[i] ? "+" : "−"}`).join(" ") : "none",
+      entropy_score: u && u.entropy_score, disagreement_score: u && u.disagreement_score, variance_score: u && u.variance_score, K: u && u.k});
+  }catch(e){ setErr("Segmentation failed: " + (e.message === "Failed to fetch" ? `cannot reach backend at ${API}` : e.message)); }
+  finally{ $("run").disabled = false; $("run").textContent = "Segment"; }
+};
+
+$("overlay").onclick = async ev => {
+  if(!session || busy || !imgW) return;
+  const r = ev.target.getBoundingClientRect();
+  const x = Math.min(imgW - 1, Math.max(0, (ev.clientX - r.left) * imgW / r.width));
+  const y = Math.min(imgH - 1, Math.max(0, (ev.clientY - r.top) * imgH / r.height));
+  const label = +document.querySelector("input[name=lab]:checked").value;
+  busy = true; setErr("");
+  try{ showRefined(await call("/ext/refine", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({session_id:session, x, y, label})})); }
+  catch(e){ setErr("Refine failed: " + e.message); }
+  finally{ busy = false; }
+};
+
+$("reset").onclick = async () => {
+  if(!session) return;
+  try{ showRefined(await call("/ext/reset", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({session_id:session})})); }
+  catch(e){ setErr("Reset failed: " + e.message); }
+};
+
+const esc = s => String(s ?? "—").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const selIds = () => [...document.querySelectorAll(".hSel:checked")].map(b => b.value).join(",");
+
+async function loadHistory(){
+  try{
+    const m = $("hMethod").value;
+    const j = await call(`/ext/history?limit=200${m ? "&method=" + m : ""}`);
+    const cols = ["id","timestamp","query_image_name","method","method_used","dice","boundary_iou","entropy_score","variance_score","n_clicks","refined_dice"];
+    $("hTable").innerHTML = `<tr><th></th>${cols.map(c => `<th>${c}</th>`).join("")}</tr>` +
+      j.runs.map(r => `<tr><td><input type="checkbox" class="hSel" value="${r.id}"></td>${cols.map(c => `<td>${esc(typeof r[c] === "number" && !Number.isInteger(r[c]) ? r[c].toFixed(4) : r[c])}</td>`).join("")}</tr>`).join("");
+    if(!j.runs.length) $("hTable").innerHTML = "<tr><td class='status'>No runs recorded yet.</td></tr>";
+  }catch(e){ setErr("History failed: " + e.message); }
+}
+
+$("hRefresh").onclick = loadHistory;
+$("hMethod").onchange = loadHistory;
+$("hCompare").onclick = async () => {
+  const ids = selIds();
+  if(ids.split(",").filter(Boolean).length < 2) return setErr("Select at least 2 runs to compare.");
+  try{
+    const j = await call(`/ext/history/compare?ids=${ids}`);
+    const keys = Object.keys(j.runs[0].values);
+    $("cTable").innerHTML = `<tr><th>metric</th>${j.runs.map(r => `<th>#${r.id} ${esc(r.method)}</th>`).join("")}</tr>` +
+      keys.map(k => `<tr><th>${k}</th>${j.runs.map(r => { const v = r.values[k], d = r.delta_vs_reference[k];
+        return `<td>${esc(v === null ? null : v.toFixed(4))}${r.id !== j.reference_id && d !== null ? ` <span class="status">(${d >= 0 ? "+" : ""}${d.toFixed(4)})</span>` : ""}${j.best[k] === r.id ? " ★" : ""}</td>`; }).join("")}</tr>`).join("") +
+      `<tr><td colspan="${j.runs.length + 1}" class="status">Differences vs #${j.reference_id}${j.same_query ? "" : " — note: runs use different query images"}</td></tr>`;
+  }catch(e){ setErr("Compare failed: " + e.message); }
+};
+const openExport = path => { const ids = selIds(); window.open(`${API}/ext/history/${path}${ids ? "?ids=" + ids : ""}`, "_blank"); };
+$("hCsv").onclick = () => openExport("export.csv");
+$("hHtml").onclick = () => openExport("report.html");
+$("hPdf").onclick = () => openExport("report.pdf");
+
+health();
+loadHistory();
+</script>
+</body>
+</html>
