@@ -92,7 +92,7 @@ baseline comes from the background prototype and attention. Nothing else is intr
 5. If no background cell exists, the code falls back to the mean over the valid region. This
    fallback is logged and recorded in `last_info`.
 
-### 7. BCM: Background Context Modeling
+### 7. BCM: Background-centric Context Modeling
 The query features (`predictor.features`) and the prototype are L2-normalised. Cosine similarity is
 computed at each of the 64×64 positions and a sigmoid is applied, giving `[1, 1, 64, 64]`.
 **High** values mean background-like; **low** values mean less background-like (likely
